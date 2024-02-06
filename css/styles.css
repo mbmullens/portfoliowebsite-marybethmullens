@@ -3,6 +3,7 @@ Colors used:
 Primary / Accent Color Teal: #4FA8AD;
 Primary / Accent Color Teal 10%: #358E94;
 Primary / Accent Color Teal 20%: #2F7E83;
+Primary / Accent Color Teal 30%: #346D74;
 Neutral Black: #111111;
 Neutral White: #ffffff;
 Neutral Gray: #E6E6E6;
@@ -18,13 +19,17 @@ body {
     background-color: white;
 }
 
+img {
+    width: 100%;
+  }
+
 h1, h2, h3, h4 {
     line-height: 1.4;
   }
 
 h1 {
     font-family: "Playfair Display", serif;
-    font-size: 2.75em;
+    font-size: 2.5em;
     font-weight: 900;
     font-style: normal;
     color: #111111;
@@ -48,8 +53,33 @@ h4 {
     font-weight: 400;
 }
 
+a {
+    color: #346D74;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  a:hover,
+  a:focus {
+    color: #346D74;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
 header {
-    background-color: #358E94
+    background-color: #358E94;
+    a {
+        color: white;
+        font-weight: 400;
+        text-decoration: none;
+      }
+    
+      a:hover,
+      a:focus {
+        color: #111111;
+        font-weight: 400;
+        text-decoration: underline;
+      }
 }
 
 footer {
