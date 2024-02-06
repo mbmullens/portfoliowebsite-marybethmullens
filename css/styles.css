@@ -1,8 +1,21 @@
+/*
+Colors used:
+Primary / Accent Color Teal: #4FA8AD;
+Primary / Accent Color Teal 10%: #358E94;
+Primary / Accent Color Teal 20%: #2F7E83;
+Neutral Black: #111111;
+Neutral White: #ffffff;
+Neutral Gray: #E6E6E6;
+*/
+
 body {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     background-color: #E6E6E6
 }
 
 header {
     background-color: #358E94
 }
-
