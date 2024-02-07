@@ -11,77 +11,136 @@ Neutral Gray: #E6E6E6;
 
 body {
 
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 1.6;
-    background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.6;
+  background-color: white;
 }
 
 img {
-    width: 100%;
-  }
+  width: 100%;
+}
 
-h1, h2, h3, h4 {
-    line-height: 1.4;
-  }
+h1,
+h2,
+h3,
+h4 {
+  line-height: .75;
+}
 
 h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 2.5em;
-    font-weight: 900;
-    font-style: normal;
-    color: #111111;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5em;
+  font-weight: 900;
+  font-style: normal;
+  color: #111111;
 }
 
 h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 2.25em;
-    font-weight: 900;
-    font-style: normal;
-    color: #111111;
+  font-family: "Playfair Display", serif;
+  font-size: 2.25em;
+  font-weight: 900;
+  font-style: normal;
+  color: #111111;
 }
 
 h3 {
-    font-size: 1.75em;
-    font-weight: 700;
-  }
+  font-size: 1.75em;
+  font-weight: 700;
+}
 
 h4 {
-    font-size: 1.35em;
-    font-weight: 400;
+  font-size: 1.35em;
+  font-weight: 400;
 }
 
 a {
-    color: #346D74;
-    font-weight: 700;
-    text-decoration: underline;
+  color: #346D74;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #346D74;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+header {
+  background-color: #358E94;
+
+  a {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
   }
 
   a:hover,
   a:focus {
-    color: #346D74;
-    font-weight: 700;
-    text-decoration: none;
+    color: #111111;
+    font-weight: 400;
+    text-decoration: underline;
   }
-
-header {
-    background-color: #358E94;
-    a {
-        color: white;
-        font-weight: 400;
-        text-decoration: none;
-      }
-    
-      a:hover,
-      a:focus {
-        color: #111111;
-        font-weight: 400;
-        text-decoration: underline;
-      }
 }
 
 footer {
-    background-color: #E6E6E6;
+  background-color: #E6E6E6;
+}
+
+.button {
+  display: inline-block;
+  background-color: #4FA8AD;
+  color: #111111;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #358E94;
+  color: #111111;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: #4FA8AD;
+  color: #111111;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.secondarybutton {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #111111;
+  font-weight: 600;
+  padding: 4px 15px;
+  border-radius: 50px;
+  border: 2px solid #358E94;
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.secondarybutton:hover,
+.secondarybutton:focus
+{
+  opacity: .9;
+  background-color: #E6E6E6;
+  color: #111111;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.secondarybutton:active  {
+  background-color: #ffffff;
+  color: #2F7E83;
+  font-weight: 600;
+  text-decoration: none;
 }
