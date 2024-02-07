@@ -69,19 +69,6 @@ a:focus {
 
 header {
   background-color: #358e94;
-
-  a {
-    color: white;
-    font-weight: 400;
-    text-decoration: none;
-  }
-
-  a:hover,
-  a:focus {
-    color: #111;
-    font-weight: 400;
-    text-decoration: underline;
-  }
 }
 
 footer {
@@ -144,4 +131,8 @@ footer {
 
 #header-logo {
   max-width: 200px;
+}
+
+#icons {
+  max-width: 40px;
 }
