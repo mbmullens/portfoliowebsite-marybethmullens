@@ -90,7 +90,7 @@ footer {
   background-color: #E6E6E6;
 }
 
-.button {
+.primarybutton {
   display: inline-block;
   background-color: #4FA8AD;
   color: #111111;
@@ -101,15 +101,15 @@ footer {
   text-decoration: none;
 }
 
-.button:hover,
-.button:focus {
+.primarybutton:hover,
+.primarybutton:focus {
   background-color: #358E94;
   color: #111111;
   font-weight: 700;
   text-decoration: none;
 }
 
-.button:active {
+.primarybutton:active {
   background-color: #4FA8AD;
   color: #111111;
   font-weight: 700;
