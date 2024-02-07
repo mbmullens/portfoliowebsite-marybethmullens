@@ -8,9 +8,7 @@ Neutral Black: #111111;
 Neutral White: #ffffff;
 Neutral Gray: #E6E6E6;
 */
-
 body {
-
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -35,7 +33,7 @@ h1 {
   font-size: 2.25em;
   font-weight: 900;
   font-style: normal;
-  color: #111111;
+  color: #111;
 }
 
 h2 {
@@ -43,7 +41,7 @@ h2 {
   font-size: 1.75em;
   font-weight: 900;
   font-style: normal;
-  color: #111111;
+  color: #111;
 }
 
 h3 {
@@ -52,25 +50,25 @@ h3 {
 }
 
 h4 {
-  font-size: 1.0em;
+  font-size: 1em;
   font-weight: 400;
 }
 
 a {
-  color: #346D74;
+  color: #346d74;
   font-weight: 500;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #346D74;
+  color: #346d74;
   font-weight: 700;
   text-decoration: underline;
 }
 
 header {
-  background-color: #358E94;
+  background-color: #358e94;
 
   a {
     color: white;
@@ -80,20 +78,20 @@ header {
 
   a:hover,
   a:focus {
-    color: #111111;
+    color: #111;
     font-weight: 400;
     text-decoration: underline;
   }
 }
 
 footer {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .primarybutton {
   display: inline-block;
-  background-color: #4FA8AD;
-  color: #111111;
+  background-color: #4fa8ad;
+  color: #111;
   font-weight: 700;
   padding: 8px 20px;
   border-radius: 50px;
@@ -103,44 +101,43 @@ footer {
 
 .primarybutton:hover,
 .primarybutton:focus {
-  background-color: #358E94;
-  color: #111111;
+  background-color: #358e94;
+  color: #111;
   font-weight: 700;
   text-decoration: none;
 }
 
 .primarybutton:active {
-  background-color: #4FA8AD;
-  color: #111111;
+  background-color: #4fa8ad;
+  color: #111;
   font-weight: 700;
   text-decoration: none;
 }
 
 .secondarybutton {
   display: inline-block;
-  background-color: #ffffff;
-  color: #111111;
+  background-color: #fff;
+  color: #111;
   font-weight: 600;
   padding: 4px 15px;
   border-radius: 50px;
-  border: 2px solid #358E94;
+  border: 2px solid #358e94;
   transition: 0.2s opacity;
   text-decoration: none;
 }
 
 .secondarybutton:hover,
-.secondarybutton:focus
-{
-  opacity: .9;
-  background-color: #E6E6E6;
-  color: #111111;
+.secondarybutton:focus {
+  opacity: 0.9;
+  background-color: #e6e6e6;
+  color: #111;
   font-weight: 600;
   text-decoration: none;
 }
 
-.secondarybutton:active  {
-  background-color: #ffffff;
-  color: #2F7E83;
+.secondarybutton:active {
+  background-color: #fff;
+  color: #2f7e83;
   font-weight: 600;
   text-decoration: none;
 }
