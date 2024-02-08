@@ -22,10 +22,8 @@
 
 <body class="homepage">
     <header id="header">
-        <div>
-            <div id="header-logo">
-                <img src="img/header-logo.svg" alt="Mullens Designer Logo">
-            </div>
+        <div class="container">
+            <img src="img/header-logo.svg" id="header-logo" alt="Mullens Designer Logo">
             <nav>
                 <a href="index.html" class="secondarybutton">work</a>
                 <a href="about.html" class="secondarybutton">about</a>
@@ -35,48 +33,47 @@
     </header>
     <main>
         <div id="hero">
-            <div>
+            <div class="container">
                 <h1>Hi, my name is Mary Beth Mullens.</h1>
                 <h3>I'm a Graphic Designer and UX/UI Designer from Indianapolis.</h3>
                 <p>I transform ideas into compelling creations for print and online realms.</p>
             </div>
         </div>
         <div id="work">
-            <div>
+            <div class="container">
                 <h2>My work</h2>
-                <div>
+                <div class="row">
                     <div>
-                        <div>
-                            <picture>
-                                <source srcset="img/campfam/campfam_thumbnail_1x.png" media="(max-width:767px)">
-                                <img src="img/campfam/campfam_thumbnail_2x.png"
-                                    alt="Photo of an orange tent in the woods at night">
-                            </picture>
-                        </div>
-                        <div>
-                            <h3>Case Study: CampFam Website</h3>
-                            <p>User Experience and User Interface Design of a responsive web app for booking
-                                family-friendly
-                                campgrounds.</p>
-                            <a href="project-campfam.html" class="primarybutton">view project</a>
-                        </div>
+                        <picture>
+                            <source srcset="img/campfam/campfam_thumbnail_1x.png" media="(max-width:767px)">
+                            <img src="img/campfam/campfam_thumbnail_2x.png"
+                                alt="Photo of an orange tent in the woods at night">
+                        </picture>
                     </div>
                     <div>
-                        <div>
-                            <picture>
-                                <source srcset="img/chirp/chirp_thumbnail_1x.png" media="(max-width:767px)">
-                                <img src="img/chirp/chirp_thumbnail_2x.png"
-                                    alt="Illustration of a black vinyl record and crow bird icon">
-                            </picture>
-                        </div>
-                        <div>
-                            <h3>Case Study: CHIRP Radio App</h3>
-                            <p>User Interface Design of CHIRP Radio music player app, comparing Apple and Android native
-                                operating system requirements.</p>
-                            <a href="#" class="primarybutton">view project</a>
-                        </div>
+                        <h3>Case Study: CampFam Website</h3>
+                        <p>User Experience and User Interface Design of a responsive web app for booking
+                            family-friendly
+                            campgrounds.</p>
+                        <a href="project-campfam.html" class="primarybutton">view project</a>
                     </div>
-
+                </div>
+                <div class="row">
+                    <div>
+                        <picture>
+                            <source srcset="img/chirp/chirp_thumbnail_1x.png" media="(max-width:767px)">
+                            <img src="img/chirp/chirp_thumbnail_2x.png"
+                                alt="Illustration of a black vinyl record and crow bird icon">
+                        </picture>
+                    </div>
+                    <div>
+                        <h3>Case Study: CHIRP Radio App</h3>
+                        <p>User Interface Design of CHIRP Radio music player app, comparing Apple and Android native
+                            operating system requirements.</p>
+                        <a href="#" class="primarybutton">view project</a>
+                    </div>
+                </div>
+                <div class="row">
                     <div>
                         <picture>
                             <source srcset="img/marigold/marigold_thumbnail_1x.png" media="(max-width:767px)">
@@ -95,22 +92,18 @@
         </div>
     </main>
     <footer id="contact">
-        <div>
+        <div class="container">
             <h2>Get in Touch</h2>
-            <p>Do you like my work and want to discuss opportunities? Please get in touch. Call: <a
-                    href="tel:317-694-7367">317-694-7367</a> or email
-                mbmullens@gmail.com</p>
-            <div>
+            <p>Call <a href="tel:317-694-7367">317-694-7367</a> or email mbmullens@gmail.com!</p>
+            <div class="row">
                 <a href="mailto:mbmullens@gmail.com" class="secondarybutton">send email</a>
             </div>
-            <div id="icons">
-                <a href="https://www.linkedin.com/in/mary-beth-mullens/" target="_blank">
-                    <img src="img/icon-linkedin.svg" alt="">
-                </a>
-                <a href="https://www.behance.net/marybethmullens" target="_blank">
-                    <img src="img/icon-behance.svg" alt="Behance icon">
-                </a>
-            </div>
+            <a href="https://www.linkedin.com/in/mary-beth-mullens/" target="_blank">
+                <img src="img/icon-linkedin.svg" class="icons" alt="LinkedIn icon">
+            </a>
+            <a href="https://www.behance.net/marybethmullens" target="_blank">                    
+                <img src="img/icon-behance.svg" class="icons" alt="Behance icon">
+            </a>
             <p>Copyright 2024 | Mary Beth Mullens | Indianapolis, IN</p>
         </div>
     </footer>
