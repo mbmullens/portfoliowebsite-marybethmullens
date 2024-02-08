@@ -18,7 +18,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 1.6;
   background-color: white;
 }
 
@@ -61,7 +61,7 @@ h4 {
 
 a {
   color: #346d74;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -69,19 +69,34 @@ a:hover,
 a:focus {
   color: #346d74;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 header {
   background-color: #358e94;
+  width: 100%;
   text-align: center;
   padding: 15px 0 20px;
+  position: fixed;
+}
+
+.css-box-shadow {
+  width: [object Object]px;
+  height: [object Object]px;
+  background: #358e94;
+  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.24);
 }
 
 footer {
   background-color: #e6e6e6;
   text-align: center;
   padding: 10px 0 15px;
+}
+
+main {
+  padding-top: 180px;
 }
 
 .primarybutton {
@@ -156,7 +171,7 @@ footer {
 }
 
 .row {
-  margin: 10px 0;
+  margin: 30px 0;
   padding-bottom: 10px;
 }
 
