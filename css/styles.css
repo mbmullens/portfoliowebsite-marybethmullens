@@ -72,12 +72,20 @@ a:focus {
   text-decoration: underline;
 }
 
-header {
+#header {
   background-color: #358e94;
   width: 100%;
   text-align: center;
   padding: 15px 0 20px;
   position: fixed;
+}
+
+#headerproject {
+  background-color: #358e94;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0 20px;
+  position: relative;
 }
 
 .css-box-shadow {
@@ -95,7 +103,7 @@ footer {
   padding: 10px 0 15px;
 }
 
-main {
+#main {
   padding-top: 180px;
 }
 
@@ -210,4 +218,22 @@ main {
 
 #project {
   padding-bottom: 20px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
