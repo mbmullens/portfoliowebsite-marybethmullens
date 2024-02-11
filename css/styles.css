@@ -116,6 +116,7 @@ main {
   color: #111;
   font-weight: 700;
   padding: 8px 20px;
+  margin: 4px;
   border-radius: 50px;
   transition: 0.3s;
   text-decoration: none;
@@ -188,6 +189,16 @@ main {
 
 .navbutton:active {
   text-decoration: none;
+}
+
+.fa {
+  display: inline-block;
+  padding-right: 4px;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #header-logo {
@@ -268,10 +279,11 @@ main {
 }
 
 #about-picture {
-  width: 70%;
+  width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 20px;
 }
 
 /* ==============================
@@ -385,9 +397,9 @@ Large devices (1024px or larger)
 }
 
 .cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+  animation: 20s cloud-move infinite alternate linear;
 }
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 24s cloud-move-reverse infinite alternate linear;
 }
