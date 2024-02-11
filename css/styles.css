@@ -393,7 +393,7 @@ Large devices (1024px or larger)
 }
 
 .sun {
-  animation: 4s color-change infinite alternate linear;
+  animation: 3s color-change infinite alternate linear;
 }
 
 .cloud-front {
