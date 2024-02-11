@@ -99,11 +99,11 @@ footer {
 }
 
 main {
-  padding-top: 180px;
+  padding-top: 170px;
 }
 
-.primarybutton {
-  display: inline-block;
+.primarybutton a {
+  /* display: inline-block; */
   background-color: #4fa8ad;
   color: #111;
   font-weight: 700;
@@ -111,10 +111,12 @@ main {
   border-radius: 50px;
   transition: 0.3s;
   text-decoration: none;
+  z-index: 0;
+  cursor: pointer;
 }
 
-.primarybutton:hover,
-.primarybutton:focus {
+.primarybutton a:hover,
+.primarybutton a:focus {
   background-color: #358e94;
   color: #111;
   font-weight: 700;
@@ -122,42 +124,64 @@ main {
   text-decoration: none;
 }
 
-.primarybutton:active {
+.primarybutton a:active {
   background-color: #4fa8ad;
   color: #111;
   font-weight: 700;
   text-decoration: none;
 }
 
-.secondarybutton {
-  display: inline-block;
+.secondarybutton a {
   background-color: #fff;
   color: #111;
-  font-weight: 600;
-  padding: 4px 15px;
   border-radius: 50px;
   border: 2px solid #358e94;
-  transition: 0.3s opacity;
   text-decoration: none;
+  font-weight: 600;
+  margin: 4px;
+  padding: 8px 20px;
+  z-index: 0;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.secondarybutton:hover,
-.secondarybutton:focus {
-  opacity: 0.9;
-  background-color: #e6e6e6;
-  color: #111;
-  font-weight: 600;
+.secondarybutton a:hover,
+.secondarybutton a:focus {
+  opacity: 0.8;
+  padding: 12px 24px;
   text-decoration: none;
 }
 
 .secondarybutton:active {
-  background-color: #fff;
-  color: #2f7e83;
-  font-weight: 600;
   text-decoration: none;
 }
 
-/* Layout styling */
+.navbutton a {
+  background-color: #fff;
+  color: #111;
+  border-radius: 50px;
+  border: 2px solid #358e94;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 4px;
+  padding: 2px 12px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbutton a:hover,
+.navbutton a:focus {
+  opacity: 0.8;
+  background-color: #e6e6e6;
+  padding: 4px 16px;
+  text-decoration: none;
+}
+
+.navbutton:active {
+  text-decoration: none;
+}
 
 #header-logo {
   max-width: 240px;
@@ -167,6 +191,15 @@ main {
   width: 70%;
   max-width: 50px;
   padding: 0 5px;
+  transition: 0.3s;
+}
+
+.icons:hover {
+  max-width: 56px;
+}
+
+.a-icons:hover,
+.a-icons:focus {
   text-decoration: none;
 }
 
@@ -175,8 +208,9 @@ main {
 }
 
 .row {
-  margin: 30px 0;
-  padding-bottom: 6px;
+  margin: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .row::after {
@@ -208,11 +242,7 @@ main {
   text-align: center;
 }
 
-#buttoncenter {
-  text-align: center;
-}
-
-#project {
+.center {
   text-align: center;
 }
 
@@ -228,27 +258,34 @@ main {
   padding-bottom: 20px;
 }
 
+#about-picture {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
   }
 
   nav {
     width: auto;
     float: right;
-    margin-top: 36px;
+    margin-top: 38px;
   }
 
   main {
-    padding-top: 136px;
+    padding-top: 128px;
   }
 
   body {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .col-md-6 {
@@ -261,6 +298,10 @@ Medium devices (640px and larger)
     margin-left: auto;
     margin-right: auto;
   }
+
+  #header-logo {
+    max-width: 220px;
+  }
 }
 
 /* ==============================
@@ -268,7 +309,7 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .col-lg-7 {
@@ -289,4 +330,50 @@ Large devices (1024px or larger)
 
 [class*="col-"] {
   float: left;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
