@@ -54,7 +54,7 @@ h2 {
 h3 {
   font-size: 1.35em;
   font-weight: 700;
-  margin: 0;
+  margin: 4px;
 }
 
 h4 {
@@ -81,6 +81,14 @@ header {
   text-align: center;
   padding: 15px 0 20px;
   position: fixed;
+}
+
+.header {
+  position: relative;
+}
+
+.main {
+  padding-top: 5px;
 }
 
 .css-box-shadow {
@@ -160,7 +168,6 @@ main {
   background-color: #fff;
   color: #111;
   border-radius: 50px;
-  border: 2px solid #358e94;
   text-decoration: none;
   font-weight: 600;
   margin: 4px;
@@ -184,7 +191,8 @@ main {
 }
 
 #header-logo {
-  max-width: 240px;
+  max-width: 230px;
+  padding-bottom: 10px;
 }
 
 .icons {
@@ -208,9 +216,9 @@ main {
 }
 
 .row {
-  margin: 16px 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  margin: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .row::after {
@@ -240,6 +248,7 @@ main {
 
 #mywork {
   text-align: center;
+  padding-top: 10px;
 }
 
 .center {
@@ -274,10 +283,15 @@ Medium devices (640px and larger)
     padding-bottom: 8px;
   }
 
+  #header-logo {
+    max-width: 230px;
+    padding-bottom: 5px;
+  }
+
   nav {
     width: auto;
     float: right;
-    margin-top: 38px;
+    margin-top: 40px;
   }
 
   main {
