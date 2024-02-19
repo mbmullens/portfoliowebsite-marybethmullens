@@ -78,6 +78,7 @@ header {
   background-color: #358e94;
   width: 100%;
   position: fixed;
+  padding-top: 10px;
 }
 
 .header {
@@ -86,6 +87,7 @@ header {
 
 #header-logo {
   max-width: 150px;
+  padding-top: 1px;
 }
 
 .css-box-shadow {
@@ -100,6 +102,8 @@ header {
 nav > ul {
   list-style-type: none;
   text-align: right;
+  padding: 0;
+  margin: 0;
 }
 
 .navtoggle li:not(:last-child) {
@@ -115,7 +119,7 @@ nav > ul {
   position: absolute;
   right: 0;
   top: 12px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .navtoggle.responsive li {
@@ -125,11 +129,6 @@ nav > ul {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
-}
-
-.navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
 }
 
 .navbutton {
@@ -142,7 +141,7 @@ nav > ul {
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
-  margin: 4px;
+  margin: 2px;
   padding: 2px 12px;
   position: relative;
   z-index: 0;
@@ -158,7 +157,9 @@ nav > ul {
   text-decoration: none;
 }
 
-.navbutton:active {
+.navbutton a:active {
+  background-color: #fff;
+  padding: 2px 12px;
   text-decoration: none;
 }
 
@@ -325,7 +326,7 @@ Medium devices (640px and larger)
 
   #header-logo {
     max-width: 160px;
-    padding-top: 10px;
+    padding-top: 1px;
     padding-bottom: 4px;
   }
 
@@ -334,8 +335,16 @@ Medium devices (640px and larger)
     float: right;
   }
 
+  nav > ul {
+    padding-top: 1em;
+  }
+
   nav > ul > li {
     display: inline-block;
+  }
+
+  .navtoggle {
+    padding-top: 10px;
   }
 
   .navtoggle li:not(:last-child) {
