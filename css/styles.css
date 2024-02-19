@@ -460,3 +460,7 @@ Large devices (1024px or larger)
 .cloud-back {
   animation: 24s cloud-move-reverse infinite alternate linear;
 }
+
+html {
+  scroll-behavior: smooth;
+}
