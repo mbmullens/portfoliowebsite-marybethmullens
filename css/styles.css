@@ -15,50 +15,51 @@ Neutral Gray: #e6e6e6;
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
-  line-height: 1.6;
   background-color: white;
-}
-
-img {
-  width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 h1 {
   font-family: "Playfair Display", serif;
-  font-size: 2.25em;
+  font-size: 2.3em;
   font-weight: 900;
   font-style: normal;
   color: #111;
   text-align: center;
+  line-height: 1.1;
 }
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-size: 1.75em;
+  font-size: 2em;
   font-weight: 900;
   font-style: normal;
   color: #111;
   text-align: center;
+  line-height: 1.2;
 }
 
 h3 {
   font-size: 1.35em;
   font-weight: 700;
   margin: 4px;
+  line-height: 1.3;
 }
 
 h4 {
   font-size: 1em;
   font-weight: 400;
+  line-height: 1.3;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
 }
 
 a {
@@ -118,17 +119,18 @@ nav > ul {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 12px;
-  font-size: 16px;
-}
-
-.navtoggle.responsive li {
-  display: block;
+  top: 10px;
+  font-size: 28px;
 }
 
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 .navbutton {
@@ -136,13 +138,12 @@ nav > ul {
 }
 
 .navbutton a {
-  background-color: #fff;
-  color: #111;
-  border-radius: 50px;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
+  font-size: 18px;
   margin: 2px;
-  padding: 2px 12px;
+  padding: 0px 5px;
   position: relative;
   z-index: 0;
   cursor: pointer;
@@ -152,14 +153,12 @@ nav > ul {
 .navbutton a:hover,
 .navbutton a:focus {
   opacity: 0.8;
-  background-color: #e6e6e6;
-  padding: 4px 16px;
+  padding: 0px 5px;
   text-decoration: none;
 }
 
 .navbutton a:active {
-  background-color: #fff;
-  padding: 2px 12px;
+  padding: 0px 5px;
   text-decoration: none;
 }
 
@@ -259,7 +258,7 @@ footer {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .row {
@@ -280,6 +279,16 @@ footer {
   border-bottom: 1px solid #4a4a4a;
 }
 
+.casestudy {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.animationrow {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 .workrow::after {
   content: "";
   clear: both;
@@ -288,14 +297,21 @@ footer {
 
 #hero {
   text-align: center;
-  margin: 0;
-  padding: 10px 0 25px;
+  padding: 10px 0px 15px;
+  display: inline-block;
   background-color: #e6e6e6;
+  width: 100%;
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
 #mywork {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 20px;
+  h2 {
+    line-height: 0;
+  }
 }
 
 .center {
@@ -318,6 +334,52 @@ footer {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    background-color: white;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5em;
+    font-weight: 900;
+    font-style: normal;
+    color: #111;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.8em;
+    font-weight: 900;
+    font-style: normal;
+    color: #111;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1.35em;
+    font-weight: 700;
+    margin: 4px;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
   header {
     text-align: unset;
     padding-top: 5px;
@@ -325,9 +387,15 @@ Medium devices (640px and larger)
   }
 
   #header-logo {
-    max-width: 160px;
+    max-width: 190px;
     padding-top: 1px;
     padding-bottom: 4px;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding: 0px;
+    border-top: none;
   }
 
   nav {
@@ -336,7 +404,7 @@ Medium devices (640px and larger)
   }
 
   nav > ul {
-    padding-top: 1em;
+    padding-top: 1.8em;
   }
 
   nav > ul > li {
@@ -355,12 +423,56 @@ Medium devices (640px and larger)
     display: none;
   }
 
-  main {
-    padding-top: 90px;
+  .navbutton a {
+    background-color: #fff;
+    color: #111;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 2px;
+    padding: 2px 12px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    transition: 0.3s;
   }
 
-  body {
-    font-size: 15px;
+  .navbutton a:hover,
+  .navbutton a:focus {
+    opacity: 0.8;
+    background-color: #e6e6e6;
+    padding: 4px 16px;
+    text-decoration: none;
+  }
+
+  .navbutton a:active {
+    background-color: #fff;
+    padding: 2px 12px;
+    text-decoration: none;
+  }
+
+  #hero {
+    text-align: center;
+    padding: 30px 0px 35px;
+    display: inline-block;
+    background-color: #e6e6e6;
+    width: 100%;
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
+  
+  #mywork {
+    text-align: center;
+    padding-top: 20px;
+    h2 {
+      line-height: 0;
+    }
+  }
+
+  main {
+    padding-top: 100px;
   }
 
   #aboutphoto {
@@ -386,9 +498,51 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     font-size: 16px;
+    font-style: normal;
+    background-color: white;
+    line-height: 1.5;
   }
 
+  h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5em;
+    font-weight: 900;
+    font-style: normal;
+    color: #111;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.8em;
+    font-weight: 900;
+    font-style: normal;
+    color: #111;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1.35em;
+    font-weight: 700;
+    margin: 4px;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+  
   #aboutphoto {
     max-width: 600px;
     float: left;
@@ -429,23 +583,91 @@ Large devices (1024px or larger)
   }
 }
 
-@keyframes cloud-move {
+@keyframes logo-move {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  97% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
   from {
-    transform: translate(0, 50px);
+    transform: translate(1px, 5px);
   }
 
   to {
-    transform: translate(200px, 50px);
+    transform: translate(1px, -110px);
   }
 }
 
-@keyframes cloud-move-reverse {
+@keyframes cloud-move-one {
   from {
-    transform: translate(446px, 48px);
+    transform: translate(320px, -15px);
   }
 
   to {
-    transform: translate(100px, 48px);
+    transform: translate(440px, -15px);
+  }
+}
+
+@keyframes cloud-move-two {
+  from {
+    transform: translate(120px, -10px);
+  }
+
+  to {
+    transform: translate(260px, -10px);
+  }
+}
+
+@keyframes cloud-move-three {
+  from {
+    transform: translate(240px, -10px);
+  }
+
+  to {
+    transform: translate(425px, -10px);
+  }
+}
+
+@keyframes banner-thanks-move {
+  from {
+    transform: translate(-300px, -2px);
+  }
+
+  to {
+    transform: translate(500px, -2px);
+  }
+}
+
+@keyframes balloons-move {
+  0% {
+    opacity: 1;
+  }
+
+  97% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+  from {
+    transform: translate(-10px, 3px);
+  }
+
+  to {
+    transform: translate(1px, -160px);
   }
 }
 
@@ -453,12 +675,28 @@ Large devices (1024px or larger)
   animation: 3s color-change infinite alternate linear;
 }
 
-.cloud-front {
-  animation: 20s cloud-move infinite alternate linear;
+.logo-mullens {
+  animation: 12s logo-move infinite ease-in-out;
 }
 
-.cloud-back {
-  animation: 24s cloud-move-reverse infinite alternate linear;
+.cloud-one {
+  animation: 35s cloud-move-one infinite alternate linear;
+}
+
+.cloud-two {
+  animation: 30s cloud-move-two infinite alternate linear;
+}
+
+.cloud-three {
+  animation: 30s cloud-move-three infinite alternate linear;
+}
+
+.balloons-group {
+  animation: 12s balloons-move infinite linear;
+}
+
+.banner-thanks {
+  animation: 12s banner-thanks-move infinite linear;
 }
 
 html {

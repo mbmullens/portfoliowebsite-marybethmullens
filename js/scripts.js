@@ -1,10 +1,44 @@
-console.log("Hello! Welcome to my portfolio site!")
+
+var faBars = $(".fa-bars");
+
+var faX = $(".fa-x");
+
+var navtoggleResponsive = $(".navtoggle responsive")
+
+var navToggle = $(".navtoggle")
+
+if (document.getElementById('myNavtoggle')) {
+    faX.hide();
+} else {
+    faBars.show();
+}
 
 function menuToggle() {
     var x = document.getElementById('myNavtoggle');
-    if (x.className === 'navtoggle') {
+    if (x.className === 'navtoggle') { 
         x.className += ' responsive';
-    } else {
+        faBars.hide();
+        faX.show();
+    } 
+    else {
         x.className = 'navtoggle';
+        faBars.show();
+        faX.hide();
     }
 }
+
+function contactToggle() {
+    var x = document.getElementById('myNavtoggle');
+    if (x.className === 'navtoggle') { 
+        x.className += ' responsive';
+        faBars.hide();
+        faX.show();
+    } 
+    else {
+        x.className = 'navtoggle';
+        faBars.show();
+        faX.hide();
+    }
+}
+
+
