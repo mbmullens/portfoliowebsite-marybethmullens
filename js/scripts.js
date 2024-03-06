@@ -1,7 +1,7 @@
 
 var faBars = $(".fa-bars");
 
-var faX = $(".fa-x");
+var faX = $(".fa-xmark");
 
 var navtoggleResponsive = $(".navtoggle responsive")
 
@@ -14,20 +14,6 @@ if (document.getElementById('myNavtoggle')) {
 }
 
 function menuToggle() {
-    var x = document.getElementById('myNavtoggle');
-    if (x.className === 'navtoggle') { 
-        x.className += ' responsive';
-        faBars.hide();
-        faX.show();
-    } 
-    else {
-        x.className = 'navtoggle';
-        faBars.show();
-        faX.hide();
-    }
-}
-
-function contactToggle() {
     var x = document.getElementById('myNavtoggle');
     if (x.className === 'navtoggle') { 
         x.className += ' responsive';

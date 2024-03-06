@@ -38,96 +38,75 @@
                         <li><a href="index.html">work</a></li>
                         <li><a href="about.html">about</a></li>
                         <li><a href="#contact" onclick="menuToggle()">contact </a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i><i class="fas fa-x"></i></a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i><i class="fas fa-xmark"></i></a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <div id="about">
-            <div class="container row">
-                <div>
-                    <h1>About Me</h1>
-                </div>
+        <div class="hero-main">
+            <div class="hero-image-container">
             </div>
-            <div class="container">
+            <div class="hero-text-container"> 
+                   <h1 class="hero-text-h1">About Me</h1>
+            </div>  
+        </div>
+        <div id="about">
+            <div class="container aboutrow">
                 <div id="aboutphoto">
-                    <picture>
-                        <source srcset="img/about-marybeth-photo-1x.jpg" media="(max-width:767px)">
-                        <img src="img/about-marybeth-photo-2x.jpg"
-                            alt="Black and white photo of woman standing outside in a field">
-                    </picture>
+                    <img src="img/marybeth-mullens-photo2.jpg" class="image-circle" alt="profile picture of woman wearing glasses">
                 </div>
                 <div>
                     <div>
-                        <div>
-                            <h3>Hello and welcome to my website! My name is Mary Beth Mullens, and I'm a Graphic, Marketing and UX/UI Designer from Indianapolis.</h3>
-                            <p><b>With two decades in visual communication, I've had the pleasure of enhancing many different brands,
-                                ensuring products shine, and delivering genuine human-centered experiences.</b> I bring years of trained artistic skills, a love of problem solving and a caring approach to any role! 
-                            </p>
-                            <p><b>My background includes growing up in Chicago before receiving a Bachelor’s Degree in Art and Graphic Design 
-                                from <a href="https://www.eiu.edu/">Eastern Illinois University</a> in 2004.</b> Afterwards my husband and I
-                                moved to Indy, and I have since worked at in-house design teams and freelance design for various small businesses and non-profits around the city. </p>
-                            <p><b>As Marketing Director for the boutique <a href="https://marigoldclothing.com/">Marigold Clothing</a> for the past ten years, I was responsible for
-                                engaging promotions across
-                                all channels that increased customer satisfaction and revenue.</b> Some of the highlights from
-                                my
-                                time there included refreshing their brand design, elevating the look of their photography and
-                                helping launch their ecommerce website on Shopify.</p>
-                            <p><b>Recently I updated my tech skills through award-winning online school <a href="https://careerfoundry.com/">Career Foundry</a>, learning how to
-                                enhance a website or app with best practices in
-                                User Experience, User Interface and Basic Front-End Development.</b> The goal is to take the
-                                next
-                                step into a new Senior Graphic Design position or entry-level role in UI/UX and Website
-                                Design.
-                                I am open to full-time, contract-to-hire jobs in Indianapolis plus remote jobs anywhere in
-                                the
-                                U.S.</p>
-                            <p><b>I’m eager to bring my unique blend of creativity and strategic thinking to any
-                                company or organization.</b> Join me on an exciting journey of breathing new life into
-                                projects and setting high standards in design, accessibility and user engagement!
+                        <div id="about-intro">
+                            <h3>Hello and welcome to my website! My name is Mary Beth Mullens, and I'm a Graphic Designer, UX/UI Designer and Marketing Professional from Indianapolis, IN.</h3>
+                            <div class="about-icons"><i class="fa-solid fa-pen-to-square"></i> <i class="fa-solid fa-desktop"></i> <i class="fa-solid fa-swatchbook"></i></div>
+                            <p>With two decades in visual communication and a keen eye for design, I've enhanced many different brands,
+                                ensured products shine, and delivered genuine user-friendly experiences. 
                             </p>
                         </div>
-                        <div class="row primarybutton center">
-                            <a href="#">download my resume</a>
-                        </div>
+                    </div>
+                    <br>
+                    <div class="row primarybutton center">
+                        <a href="#">download my resume</a>
                     </div>
                     <div id="skills" class="row">
                         <h2>Skills and Tools</h2>
                         <div class="col-md-6">
-                            <h3>Design Skills</h3>
+                            <h3>My Design Experience Includes:</h3>
                             <ul>
                                 <li>Logos and Branding</li>
-                                <li>Promotional Materials and Products</li>
                                 <li>Websites and Apps</li>
                                 <li>User Interface and User Experience</li>
                                 <li>Email Marketing</li>
                                 <li>Photography and Photo Editing</li>
+                                <li>Marketing Collateral</li>
+                                <li>Promotional Products</li>
                                 <li>Multi-Page Layouts</li>
                                 <li>Packaging</li>
+                                <li>Invitations</li>
                                 <li>POS and Event Signage</li>
                                 <li>Social Media Content</li>
                                 <li>Video Editing</li>
                                 <li>Interactive Design</li>
+                                <li>Animation</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
-                            <h3>Tools Used</h3>
+                            <h3>Tools I've Used:</h3>
                             <ul>
                                 <li>Figma</li>
-                                <li>Adobe Illustrator</li>
-                                <li>Adobe Photoshop</li>
-                                <li>Adobe InDesign</li>
+                                <li>Adobe Illustrator, Photoshop &amp; InDesign</li>
                                 <li>Adobe XD</li>
                                 <li>Adobe Premiere Rush</li>
                                 <li>Adobe Lightroom</li>
                                 <li>Canva</li>
                                 <li>Shopify</li>
                                 <li>Wordpress</li>
-                                <li>HTML and CSS</li>
-                                <li>Javascript</li>
                                 <li>Constant Contact</li>
+                                <li>HTML and CSS</li>
+                                <li>Javascript and Jquery</li>
                                 <li>Meta Business Suite</li>
                                 <li>Google Docs and Forms</li>
                                 <li>Microsoft Office</li>
@@ -136,14 +115,40 @@
                             </ul>
                         </div>
                     </div>
+                    <div>
+                        <div>
+                            <div id="about-mystory">
+                                <h2>My Story</h2>
+                                <p><b>I grew up in Chicago with an aptitude for drawing and painting.</b> This led to my Bachelor’s Degree in Art and Graphic Design 
+                                    from <a href="https://www.eiu.edu/">Eastern Illinois University</a>. After college, my husband and I
+                                    moved to Indianapolis where I've worked for various small businesses on their in-house design teams, as well as freelance designed for several non-profits.</p>
+                                <p><b>For the past decade, I brought my skills to <a href="https://marigoldclothing.com/">Marigold Clothing</a></b>, a boutique in Indianapolis. As their Marketing Manager, I was responsible for promotions across
+                                    all channels to increase customer satisfaction and revenue. Some highlights from
+                                    my
+                                    time there include refreshing their branding, elevating their photography, re-designing their website in WordPress and then launching an ecommerce site on Shopify.</p>
+                                <p><b>Recently I went back to school through <a href="https://careerfoundry.com/">Career Foundry</a> to update my tech skills,</b> learning how to
+                                    enhance a website or mobile app with best best practices in User Experience, User Interface, and Front-End Development. The goal is to elevate my career with
+                                    a new Senior Graphic Design position or junior role in UX/UI and Web Design.</p>
+                                <p><b>I’m eager to bring my blend of creativity, empathy and strategic thinking to any
+                                    company or organization.</b> I am open to full-time, contract-to-hire or freelance jobs in Indianapolis plus remote jobs anywhere in
+                                    the U.S.</p>
+                                
+                                <h3>Join me on an exciting journey of breathing new life into
+                                    projects and setting high standards in design and user engagement!</h3> 
+
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
+        </div>
+        <br>
+        <br>
     </main>
     <footer id="contact">
         <div class="container">
             <h2>Get in touch</h2>
-            <p>Call <a href="tel:317-694-7367">317-694-7367</a> or email mbmullens@gmail.com</p>
+            <p>Call <a href="tel:317-694-7367" style="color: #346d74">317-694-7367</a> or email mbmullens@gmail.com</p>
             <div class="row secondarybutton">
                 <a href="mailto:mbmullens@gmail.com">send email</a>
             </div>

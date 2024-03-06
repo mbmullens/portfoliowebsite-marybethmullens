@@ -23,7 +23,7 @@ body {
 
 h1 {
   font-family: "Playfair Display", serif;
-  font-size: 2.3em;
+  font-size: 2em;
   font-weight: 900;
   font-style: normal;
   color: #111;
@@ -33,7 +33,7 @@ h1 {
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 900;
   font-style: normal;
   color: #111;
@@ -42,15 +42,16 @@ h2 {
 }
 
 h3 {
-  font-size: 1.35em;
+  font-size: 1.25em;
   font-weight: 700;
   margin: 4px;
   line-height: 1.3;
 }
 
 h4 {
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 4px;
   line-height: 1.3;
 }
 
@@ -63,7 +64,7 @@ img {
 }
 
 a {
-  color: #346d74;
+  color: #2f7e83;
   font-weight: 700;
   text-decoration: none;
 }
@@ -75,15 +76,31 @@ a:focus {
   text-decoration: underline;
 }
 
+.quicklinks a {
+  color: #2f7e83;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.quicklinks a:hover,
+.quicklinks a:focus {
+  color: #2f7e83;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.quicklinksrow {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 header {
   background-color: #358e94;
   width: 100%;
   position: fixed;
   padding-top: 10px;
-}
-
-.header {
-  position: relative;
 }
 
 #header-logo {
@@ -151,23 +168,19 @@ nav > ul {
 }
 
 .navbutton a:hover,
-.navbutton a:focus {
+.navbutton a:active {
   opacity: 0.8;
   padding: 0px 5px;
   text-decoration: none;
 }
-
+/*
 .navbutton a:active {
   padding: 0px 5px;
   text-decoration: none;
 }
-
+  */
 main {
-  padding-top: 80px;
-}
-
-.main {
-  padding-top: 5px;
+  padding-top: 82px;
 }
 
 footer {
@@ -190,22 +203,21 @@ footer {
   cursor: pointer;
 }
 
-.primarybutton a:hover,
-.primarybutton a:focus {
+.primarybutton a:active {
   background-color: #358e94;
   color: #111;
   font-weight: 700;
   padding: 12px 24px;
   text-decoration: none;
 }
-
+/*
 .primarybutton a:active {
   background-color: #4fa8ad;
   color: #111;
   font-weight: 700;
   text-decoration: none;
 }
-
+  */
 .secondarybutton a {
   background-color: #fff;
   color: #111;
@@ -221,15 +233,16 @@ footer {
 }
 
 .secondarybutton a:hover,
-.secondarybutton a:focus {
+.secondarybutton a:active {
   opacity: 0.8;
   padding: 12px 24px;
   text-decoration: none;
 }
-
+/*
 .secondarybutton:active {
   text-decoration: none;
 }
+  */
 
 .fa {
   display: inline-block;
@@ -248,6 +261,48 @@ footer {
   transition: 0.3s;
 }
 
+.about-icons {
+  padding: 8px;
+}
+
+.fa-solid {
+  padding: 8px;
+  font-size: 2em;
+  color: #2f7e83;
+}
+
+.fa-brands {
+  font-size: 24px;
+  width: 32px;
+}
+
+.topofpage a {
+  padding: 4px;
+  font-size: 12px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 3px solid #2f7e83;
+  border-radius: 100px;
+  background-color: white;
+  opacity: 0.8;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.topofpage a:active {
+  padding: 8px;
+  font-size: 12px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 3px solid #2f7e83;
+  border-radius: 150px;
+  background-color: #e6e6e6;
+  opacity: 1;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
 .icons:hover {
   max-width: 56px;
 }
@@ -262,9 +317,10 @@ footer {
 }
 
 .row {
-  margin: 10px 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .row::after {
@@ -279,9 +335,14 @@ footer {
   border-bottom: 1px solid #4a4a4a;
 }
 
+.aboutrow {
+  margin: 10px 0;
+  padding-top: 20px;
+  padding-bottom: 1px;
+}
+
 .casestudy {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .animationrow {
@@ -303,6 +364,9 @@ footer {
   width: 100%;
   h1 {
     margin-bottom: 10px;
+  }
+  p {
+    font-size: 18px;
   }
 }
 
@@ -326,8 +390,97 @@ footer {
   padding-bottom: 20px;
 }
 
+#about-intro {
+  text-align: center;
+  h3 {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #2f7e83;
+    line-height: 1.4;
+    padding-bottom: 10px;
+  }
+}
+
+#about-mystory {
+  text-align: center;
+  h3 {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #2f7e83;
+    line-height: 1.4;
+    padding-bottom: 10px;
+  }
+}
+
 #project {
   padding-bottom: 20px;
+}
+
+#aboutphoto {
+  padding-bottom: 10px;
+  max-width: 250px;
+  margin: auto;
+}
+
+#copyright {
+  p {
+    font-size: 14px;
+  }
+}
+
+.hero-image-container2 {
+  grid-area: overflow;
+  width: 100%;
+  height: 300px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.75)), url("/img/hero-image-home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-container {
+  grid-area: overflow;
+  width: auto;
+  height: 200px;
+  background-image: radial-gradient(circle, rgba(61, 61, 61, 0.35), rgba(0, 0, 0, 0.65)), url("/img/about-marybeth-photo-2x.jpg");
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text-container {
+  grid-area: overflow;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.hero-text-h1 {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 10px #000;
+}
+
+.hero-text-h3 {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 10px #000;
+}
+
+.hero-text-p {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 10px #000;
+}
+
+.hero-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "overflow";
+}
+
+.image-circle {
+  border-radius: 300px;
 }
 
 /* ==============================
@@ -345,7 +498,7 @@ Medium devices (640px and larger)
 
   h1 {
     font-family: "Playfair Display", serif;
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: 900;
     font-style: normal;
     color: #111;
@@ -355,23 +508,23 @@ Medium devices (640px and larger)
 
   h2 {
     font-family: "Playfair Display", serif;
-    font-size: 1.8em;
+    font-size: 1.9em;
     font-weight: 900;
     font-style: normal;
     color: #111;
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.3;
   }
 
   h3 {
-    font-size: 1.35em;
+    font-size: 1.4em;
     font-weight: 700;
     margin: 4px;
     line-height: 1.3;
   }
 
   h4 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 400;
     line-height: 1.3;
   }
@@ -384,6 +537,15 @@ Medium devices (640px and larger)
     text-align: unset;
     padding-top: 5px;
     padding-bottom: 1px;
+  }
+
+  .header2 {
+    position: relative;
+    padding-bottom: 1px;
+  }
+
+  .main2 {
+    padding-top: 1px;
   }
 
   #header-logo {
@@ -430,7 +592,7 @@ Medium devices (640px and larger)
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
-    margin: 2px;
+    margin: 4px;
     padding: 2px 12px;
     position: relative;
     z-index: 0;
@@ -439,18 +601,19 @@ Medium devices (640px and larger)
   }
 
   .navbutton a:hover,
-  .navbutton a:focus {
+  .navbutton a:active {
     opacity: 0.8;
     background-color: #e6e6e6;
     padding: 4px 16px;
     text-decoration: none;
   }
-
+/*  
   .navbutton a:active {
     background-color: #fff;
     padding: 2px 12px;
     text-decoration: none;
   }
+  */
 
   #hero {
     text-align: center;
@@ -461,11 +624,15 @@ Medium devices (640px and larger)
     h1 {
       margin-bottom: 10px;
     }
+    p {
+      font-size: 20px;
+    }
   }
-  
+
   #mywork {
     text-align: center;
-    padding-top: 20px;
+    margin-bottom: 40px;
+    padding-top: 25px;
     h2 {
       line-height: 0;
     }
@@ -476,9 +643,10 @@ Medium devices (640px and larger)
   }
 
   #aboutphoto {
-    max-width: 400px;
+    max-width: 250px;
     float: left;
     padding-right: 20px;
+    padding-bottom: 0px;
   }
 
   .col-md-6 {
@@ -491,6 +659,77 @@ Medium devices (640px and larger)
     margin-left: auto;
     margin-right: auto;
   }
+
+  .aboutrow {
+    padding-top: 50px;
+    padding-bottom: 5px;
+  }
+
+  #about-intro {
+    text-align: left;
+    h3 {
+      font-size: 1.4em;
+      font-weight: 500;
+      color: #358e94;
+      line-height: 1.4;
+      padding-bottom: 10px;
+    }
+  }
+
+  #about-mystory {
+    text-align: left;
+    h3 {
+      font-size: 1.4em;
+      font-weight: 500;
+      color: #358e94;
+      line-height: 1.4;
+      padding-bottom: 10px;
+      margin: 0px;
+    }
+  }
+
+  .hero-image-container2 {
+    grid-area: overflow;
+    width: auto;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("/img/hero-image-home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-container {
+    grid-area: overflow;
+    width: auto;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(61, 61, 61, 0.35), rgba(0, 0, 0, 0.75)), url("/img/about-marybeth-photo-2x.jpg");
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .primarybutton a:hover,
+  .primarybutton a:active {
+    background-color: #358e94;
+    color: #111;
+    font-weight: 700;
+    padding: 12px 24px;
+    text-decoration: none;
+  }
+
+  .topofpage a:hover,
+  .topofpage a:active {
+    padding: 8px;
+    font-size: 12px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 3px solid #2f7e83;
+    border-radius: 150px;
+    background-color: #e6e6e6;
+    opacity: 1;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
 }
 
 /* ==============================
@@ -500,7 +739,7 @@ Large devices (1024px or larger)
   body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     background-color: white;
     line-height: 1.5;
@@ -508,7 +747,7 @@ Large devices (1024px or larger)
 
   h1 {
     font-family: "Playfair Display", serif;
-    font-size: 2.5em;
+    font-size: 2.4em;
     font-weight: 900;
     font-style: normal;
     color: #111;
@@ -518,7 +757,7 @@ Large devices (1024px or larger)
 
   h2 {
     font-family: "Playfair Display", serif;
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 900;
     font-style: normal;
     color: #111;
@@ -527,24 +766,24 @@ Large devices (1024px or larger)
   }
 
   h3 {
-    font-size: 1.35em;
+    font-size: 1.6em;
     font-weight: 700;
     margin: 4px;
     line-height: 1.3;
   }
 
   h4 {
-    font-size: 1em;
+    font-size: 1.4em;
     font-weight: 400;
     line-height: 1.3;
   }
 
   p {
-    line-height: 1.5;
+    line-height: 1.7;
   }
-  
+
   #aboutphoto {
-    max-width: 600px;
+    max-width: 300px;
     float: left;
     padding-right: 20px;
   }
@@ -559,9 +798,113 @@ Large devices (1024px or larger)
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  header {
+    text-align: unset;
+    padding-top: 5px;
+    padding-bottom: 1px;
+  }
+
+  #header-logo {
+    max-width: 190px;
+    padding-top: 1px;
+    padding-bottom: 4px;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding: 0px;
+    border-top: none;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  nav > ul {
+    padding-top: 1.6em;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle {
+    padding-top: 10px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navbutton a {
+    background-color: #fff;
+    color: #111;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 6px;
+    padding: 3px 14px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .navbutton a:hover,
+  .navbutton a:active {
+    opacity: 0.8;
+    background-color: #e6e6e6;
+    padding: 5px 20px;
+    text-decoration: none;
+  }
+/* 
+  .navbutton a:active {
+    background-color: #fff;
+    padding: 2px 12px;
+    text-decoration: none;
+  }
+ */
+  #hero {
+    text-align: center;
+    padding: 30px 0px 35px;
+    display: inline-block;
+    background-color: #e6e6e6;
+    width: 100%;
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 22px;
+    }
+  }
+
+  .aboutrow {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  #mywork {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 35px;
+    h2 {
+      line-height: 0;
+    }
+  }
+
+  main {
+    padding-top: 110px;
   }
 }
 
@@ -676,7 +1019,7 @@ Large devices (1024px or larger)
 }
 
 .logo-mullens {
-  animation: 12s logo-move infinite ease-in-out;
+  animation: 12s logo-move infinite ease-out;
 }
 
 .cloud-one {
