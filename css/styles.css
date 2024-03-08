@@ -160,7 +160,7 @@ nav > ul {
   font-weight: 600;
   font-size: 18px;
   margin: 2px;
-  padding: 0px 5px;
+  padding: 0.1px 5px;
   position: relative;
   z-index: 0;
   cursor: pointer;
@@ -170,15 +170,10 @@ nav > ul {
 .navbutton a:hover,
 .navbutton a:active {
   opacity: 0.8;
-  padding: 0px 5px;
+  padding: 0.1px 5px;
   text-decoration: none;
 }
-/*
-.navbutton a:active {
-  padding: 0px 5px;
-  text-decoration: none;
-}
-  */
+
 main {
   padding-top: 82px;
 }
@@ -210,14 +205,7 @@ footer {
   padding: 12px 24px;
   text-decoration: none;
 }
-/*
-.primarybutton a:active {
-  background-color: #4fa8ad;
-  color: #111;
-  font-weight: 700;
-  text-decoration: none;
-}
-  */
+
 .secondarybutton a {
   background-color: #fff;
   color: #111;
@@ -238,11 +226,6 @@ footer {
   padding: 12px 24px;
   text-decoration: none;
 }
-/*
-.secondarybutton:active {
-  text-decoration: none;
-}
-  */
 
 .fa {
   display: inline-block;
@@ -358,24 +341,27 @@ footer {
 
 #hero {
   text-align: center;
-  padding: 10px 0px 15px;
+  padding: 10px 0.1px 15px;
   display: inline-block;
   background-color: #e6e6e6;
   width: 100%;
-  h1 {
-    margin-bottom: 10px;
-  }
-  p {
-    font-size: 18px;
-  }
+}
+
+#hero h1 {
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 18px;
 }
 
 #mywork {
   text-align: center;
   padding-top: 20px;
-  h2 {
-    line-height: 0;
-  }
+}
+
+#mywork h2 {
+  line-height: 0;
 }
 
 .center {
@@ -392,24 +378,26 @@ footer {
 
 #about-intro {
   text-align: center;
-  h3 {
-    font-size: 1.3em;
-    font-weight: 500;
-    color: #2f7e83;
-    line-height: 1.4;
-    padding-bottom: 10px;
-  }
+}
+
+#about-intro h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #2f7e83;
+  line-height: 1.4;
+  padding-bottom: 10px;
 }
 
 #about-mystory {
   text-align: center;
-  h3 {
-    font-size: 1.3em;
-    font-weight: 500;
-    color: #2f7e83;
-    line-height: 1.4;
-    padding-bottom: 10px;
-  }
+}
+
+#about-mystory h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #2f7e83;
+  line-height: 1.4;
+  padding-bottom: 10px;
 }
 
 #project {
@@ -556,7 +544,7 @@ Medium devices (640px and larger)
 
   .navtoggle.responsive li {
     display: block;
-    padding: 0px;
+    padding: 0.1px;
     border-top: none;
   }
 
@@ -607,35 +595,31 @@ Medium devices (640px and larger)
     padding: 4px 16px;
     text-decoration: none;
   }
-/*  
-  .navbutton a:active {
-    background-color: #fff;
-    padding: 2px 12px;
-    text-decoration: none;
-  }
-  */
 
   #hero {
     text-align: center;
-    padding: 30px 0px 35px;
+    padding: 30px 0.1px 35px;
     display: inline-block;
     background-color: #e6e6e6;
     width: 100%;
-    h1 {
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 20px;
-    }
+  }
+
+  #hero h1 {
+    margin-bottom: 10px;
+  }
+
+  #hero p {
+    font-size: 20px;
   }
 
   #mywork {
     text-align: center;
     margin-bottom: 40px;
     padding-top: 25px;
-    h2 {
-      line-height: 0;
-    }
+  }
+
+  #mywork h2 {
+    line-height: 0;
   }
 
   main {
@@ -646,7 +630,7 @@ Medium devices (640px and larger)
     max-width: 250px;
     float: left;
     padding-right: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 0.1px;
   }
 
   .col-md-6 {
@@ -667,25 +651,27 @@ Medium devices (640px and larger)
 
   #about-intro {
     text-align: left;
-    h3 {
-      font-size: 1.4em;
-      font-weight: 500;
-      color: #358e94;
-      line-height: 1.4;
-      padding-bottom: 10px;
-    }
+  }
+
+  #about-intro h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #358e94;
+    line-height: 1.4;
+    padding-bottom: 10px;
   }
 
   #about-mystory {
     text-align: left;
-    h3 {
-      font-size: 1.4em;
-      font-weight: 500;
-      color: #358e94;
-      line-height: 1.4;
-      padding-bottom: 10px;
-      margin: 0px;
-    }
+  }
+
+  #about-mystory h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #358e94;
+    line-height: 1.4;
+    padding-bottom: 10px;
+    margin: 0.1px;
   }
 
   .hero-image-container2 {
@@ -729,7 +715,7 @@ Medium devices (640px and larger)
     background-color: #e6e6e6;
     opacity: 1;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
-}
+  }
 }
 
 /* ==============================
@@ -817,7 +803,7 @@ Large devices (1024px or larger)
 
   .navtoggle.responsive li {
     display: block;
-    padding: 0px;
+    padding: 0.1px;
     border-top: none;
   }
 
@@ -868,25 +854,21 @@ Large devices (1024px or larger)
     padding: 5px 20px;
     text-decoration: none;
   }
-/* 
-  .navbutton a:active {
-    background-color: #fff;
-    padding: 2px 12px;
-    text-decoration: none;
-  }
- */
+
   #hero {
     text-align: center;
-    padding: 30px 0px 35px;
+    padding: 30px 0.1px 35px;
     display: inline-block;
     background-color: #e6e6e6;
     width: 100%;
-    h1 {
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 22px;
-    }
+  }
+
+  #hero h1 {
+    margin-bottom: 10px;
+  }
+
+  #hero p {
+    font-size: 22px;
   }
 
   .aboutrow {
@@ -898,9 +880,10 @@ Large devices (1024px or larger)
     text-align: center;
     margin-bottom: 50px;
     padding-top: 35px;
-    h2 {
-      line-height: 0;
-    }
+  }
+
+  #mywork h2 {
+    line-height: 0;
   }
 
   main {
