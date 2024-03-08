@@ -1,4 +1,3 @@
-
 var faBars = $(".fa-bars");
 
 var faX = $(".fa-xmark");
