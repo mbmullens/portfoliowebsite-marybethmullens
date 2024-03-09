@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary / Accent Color Teal: #4fa8ad;
+Primary / Accent Color Teal: #4ca0a4;
 Primary / Accent Color Teal 10%: #358e94;
 Primary / Accent Color Teal 20%: #2f7e83;
 Primary / Accent Color Teal 30%: #346d74;
@@ -64,7 +64,7 @@ img {
 }
 
 a {
-  color: #2f7e83;
+  color: #346d74;
   font-weight: 700;
   text-decoration: none;
 }
@@ -77,7 +77,7 @@ a:focus {
 }
 
 .quicklinks a {
-  color: #2f7e83;
+  color: #346d74;
   font-weight: 500;
   text-decoration: underline;
   font-size: 14px;
@@ -186,7 +186,7 @@ footer {
 
 .primarybutton a {
   /* display: inline-block; */
-  background-color: #4fa8ad;
+  background-color: #4ca0a4;
   color: #111;
   font-weight: 700;
   padding: 8px 20px;
@@ -210,7 +210,7 @@ footer {
   background-color: #fff;
   color: #111;
   border-radius: 50px;
-  border: 2px solid #358e94;
+  border: 2px solid #2f7e83;
   text-decoration: none;
   font-weight: 600;
   margin: 4px;
@@ -222,6 +222,7 @@ footer {
 
 .secondarybutton a:hover,
 .secondarybutton a:active {
+  border: 2px solid #2f7e83;
   opacity: 0.8;
   padding: 12px 24px;
   text-decoration: none;
