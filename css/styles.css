@@ -505,6 +505,18 @@ footer {
   background-size: cover;
 }
 
+.herocontainer {
+  position: relative;
+  text-align: center;
+}
+
+.herotype {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .hero-image-retroresale {
   grid-area: overflow;
   width: 100%;
@@ -926,6 +938,18 @@ Medium devices (640px and larger)
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .herocontainer {
+    position: relative;
+    text-align: center;
+  }
+
+  .herotype {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .hero-image-retroresale {
