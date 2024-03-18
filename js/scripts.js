@@ -6,23 +6,23 @@ var navtoggleResponsive = $(".navtoggle responsive")
 
 var navToggle = $(".navtoggle")
 
-if (document.getElementById('myNavtoggle')) {
-    faX.hide();
-} else {
-    faBars.show();
-}
+// if (document.getElementById('myNavtoggle')) {
+    // faX.hide();
+// } else {
+    // faBars.show();
+// }
+
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
 
 function menuToggle() {
     var x = document.getElementById('myNavtoggle');
     if (x.className === 'navtoggle') { 
         x.className += ' responsive';
-        faBars.hide();
-        faX.show();
     } 
     else {
         x.className = 'navtoggle';
-        faBars.show();
-        faX.hide();
     }
 }
 

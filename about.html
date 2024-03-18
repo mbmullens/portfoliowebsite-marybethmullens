@@ -5,9 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="About Mary Beth Mullens">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" -->
+        <!-- integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <!-- <script src="js/scripts.js"></script> -->
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -20,12 +20,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- <link rel="stylesheet" href="http://localhost:3002/dist/aos.css" /> -->
     <script src="https://kit.fontawesome.com/815ce57188.js" crossorigin="anonymous"></script>
     <title>About Me</title>
 </head>
 
-<body class="aboutpage">
-    <header class="css-box-shadow">
+<body id="about">
+    <header id="header" class="css-box-shadow header2">
         <div class="container">
             <div class="navtoggle" id="myNavtoggle">
                 <a href="index.html">
@@ -33,33 +35,39 @@
                 </a>
                 <nav>
                     <ul class="navbutton">
-                        <li><a href="index.html">work</a></li>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="work.html">portfolio</a></li>
                         <li><a href="about.html">about</a></li>
-                        <li><a href="#contact" onclick="menuToggle()">contact </a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                    class="fas fa-bars"></i><i class="fas fa-xmark"></i></a></li>
+                        <li><a href="contact.html" onclick="menuToggle()">contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                            <div class="hamburgercontainer" onclick="myFunction(this)">
+                              <div class="bar1"></div>
+                              <div class="bar2"></div>
+                              <div class="bar3"></div>
+                            </div>
+                    </a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main>
+    <main id="main" class="main2">
         <div class="hero-main">
-            <div class="hero-image-container">
+            <div class="hero-image-about">
             </div>
             <div class="hero-text-container">
                 <h1 class="hero-text-h1">About Me</h1>
             </div>
         </div>
-        <div id="about">
+        <div id="aboutpage">
             <div class="container aboutrow">
-                <div id="aboutphoto">
+                <div data-aos="flip-left" id="aboutphoto">
                     <img src="img/marybeth-mullens-photo2.jpg" class="image-circle"
                         alt="profile picture of woman wearing glasses">
                 </div>
                 <div>
                     <div>
-                        <div id="about-intro">
+                        <div data-aos="fade-left" data-aos-easing="ease-in-out" id="about-intro">
                             <h3>Hello and welcome to my website! My name is Mary Beth Mullens, and I'm a Graphic
                                 Designer, UX/UI Designer and Marketing Professional from Indianapolis, IN.</h3>
                             <div class="about-icons"><i class="fa-solid fa-pen-to-square"></i> <i
@@ -70,12 +78,12 @@
                         </div>
                     </div>
                     <br>
-                    <div class="row primarybutton center">
+                    <div data-aos="zoom-in" class="row primarybutton center">
                         <a href="files/MaryBethMullens_resume.pdf" target="_blank">download my resume</a>
                     </div>
                     <div id="skills" class="row">
-                        <h2>Skills and Tools</h2>
-                        <div class="col-md-6">
+                        <h2 data-aos="zoom-in">Skills and Tools</h2>
+                        <div data-aos="fade-right" data-aos-easing="ease-in-out" class="col-md-6">
                             <h3>My Design Experience Includes:</h3>
                             <ul>
                                 <li>Logos and Branding</li>
@@ -95,7 +103,7 @@
                                 <li>Animation</li>
                             </ul>
                         </div>
-                        <div class="col-md-6">
+                        <div data-aos="fade-left" data-aos-easing="ease-in-out" class="col-md-6">
                             <h3>Tools I've Used:</h3>
                             <ul>
                                 <li>Figma</li>
@@ -120,35 +128,27 @@
                     <div>
                         <div>
                             <div id="about-mystory">
-                                <h2>My Story</h2>
-                                <p><b>I grew up in Chicago with an aptitude for drawing and painting.</b> This led to my
-                                    Bachelor’s Degree in Art and Graphic Design
+                                <h2 data-aos="zoom-in">My Story</h2>
+                                <p data-aos="fade-right" data-aos-easing="ease-in-out"><b>I grew up in Chicago with an aptitude for drawing and painting.</b> This led to my
+                                    Bachelor’s Degree in Fine Art and Graphic Design
                                     from <a href="https://www.eiu.edu/" target="_blank">Eastern Illinois University</a>.
                                     After college,
                                     my husband and I
-                                    moved to Indianapolis where I've worked for various small businesses on their
+                                    moved to Indianapolis where I've worked for various small businesses on
                                     in-house design teams, as well as freelance designed for several non-profits.</p>
-                                <p><b>For the past decade, I brought my skills to <a
+                                <p data-aos="fade-left" data-aos-easing="ease-in-out"><b>For the past decade, I brought my skills to <a
                                             href="https://marigoldclothing.com/" target="_blank">Marigold
-                                            Clothing</a></b>, a boutique
+                                            Clothing</a></b>, an upscale boutique
                                     in Indianapolis. As their Marketing Manager, I was responsible for promotions across
-                                    all channels to increase customer satisfaction and revenue. Some highlights from
+                                    all channels to increase customer satisfaction and revenue. Highlights from
                                     my
                                     time there include refreshing their branding, elevating their photography,
-                                    re-designing their website in WordPress and then launching an ecommerce site on
+                                    redesigning their website in WordPress and then launching an ecommerce site on
                                     Shopify.</p>
-                                <p><b>Recently I went back to school through <a href="https://careerfoundry.com/"
-                                            target="_blank">Career
-                                            Foundry</a> to update my tech skills,</b> learning how to
-                                    enhance a website or mobile app with best best practices in User Experience, User
-                                    Interface, and Front-End Development. The goal is to elevate my career with
-                                    a new Senior Graphic Design position or junior role in UX/UI and Web Design.</p>
-                                <p><b>I’m eager to bring my blend of creativity, empathy and strategic thinking to any
-                                        company or organization.</b> I am open to full-time, contract-to-hire or
-                                    freelance jobs in Indianapolis plus remote jobs anywhere in
-                                    the U.S.</p>
-
-                                <h3>Join me on an exciting journey of breathing new life into
+                                <p data-aos="fade-right" data-aos-easing="ease-in-out"><b>Recently I went back to school through <a href="https://careerfoundry.com/"
+                                            target="_blank">CareerFoundry</a> to update my tech skills and certifications,</b> studying the best practices of User Experience and User
+                                    Interface for websites and mobile apps. I gained hands-on knowledge in Front-End Development learning how to build this responsive portfolio site using HTML, CSS, Javascript and jQuery. These skills will help me collaborate with developers and coordinate cross-team projects.</p>
+                                <h3 data-aos="fade-right" data-aos-easing="ease-in-out">Join me on an exciting journey of breathing new life into
                                     projects and setting high standards in design and user engagement!</h3>
 
                             </div>
@@ -158,12 +158,14 @@
             </div>
         </div>
         <br>
-        <br>
     </main>
-    <footer id="contact">
+    <footer id="contactfooter">
         <div class="container">
-            <h2>Get in touch</h2>
-            <p>Call <a href="tel:317-694-7367" style="color: #346d74">317-694-7367</a> or email mbmullens@gmail.com</p>
+            <h2>Contact:</h2>
+            <p>Mary Beth Mullens | Indianapolis, IN
+                <br>Graphic Designer &amp; UX/UI Designer
+                <br><a href="tel:317-694-7367" style="color: #346d74"><i style="font-size: 18px" class="fa-solid fa-phone-volume"></i>(317) 694-7367</a>&nbsp; &nbsp;mbmullens@gmail.com <i class="fa-regular fa-envelope"></i>
+            </p>
             <div class="row secondarybutton">
                 <a href="mailto:mbmullens@gmail.com">send email</a>
             </div>
@@ -175,13 +177,25 @@
                     <img src="img/icon-behance.svg" class="icons" alt="Behance icon">
                 </a>
             </div>
-            <div id="copyright">
-                <p> &copy; 2024 | Mary Beth Mullens | Indianapolis, IN</p>
-            </div>
+            <p class="quicklinks" style="font-size: 14px">Sitemap:
+                <a href="index.html">Home</a> | 
+                <a href="work.html">Portfolio</a> | 
+                <a href="#about">About</a> | 
+                <a href="contact.html">Contact</a>
+                <br>&copy; 2024 | Designed from scratch using HTML, CSS and Javascript.
+            </p>
+            <br>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
     <script src="js/scripts.js"></script>
 </body>
 

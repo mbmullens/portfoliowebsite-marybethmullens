@@ -5,9 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Home Page of portfolio website">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" -->
+        <!-- integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <!-- <script src="js/scripts.js"></script> -->
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -20,13 +20,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- <link rel="stylesheet" href="http://localhost:3002/dist/aos.css" /> -->
     <script src="https://kit.fontawesome.com/815ce57188.js" crossorigin="anonymous"
         data-auto-replace-svg="nest"></script>
     <title>Mary Beth Mullens Graphic UI/UX Design</title>
 </head>
 
-<body class="homepage">
-    <header class="css-box-shadow">
+<body id="home">
+    <header id="header" class="css-box-shadow header2">
         <div class="container">
             <div class="navtoggle" id="myNavtoggle">
                 <a href="index.html">
@@ -34,19 +36,25 @@
                 </a>
                 <nav>
                     <ul class="navbutton">
-                        <li><a href="index.html">work</a></li>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="work.html">portfolio</a></li>
                         <li><a href="about.html">about</a></li>
-                        <li><a href="#contact" id="contactbutton" onclick="menuToggle()">contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                    class="fas fa-bars"></i><i class="fas fa-xmark"></i></a></li>
+                        <li><a href="contact.html" onclick="menuToggle()">contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                            <div class="hamburgercontainer" onclick="myFunction(this)">
+                              <div class="bar1"></div>
+                              <div class="bar2"></div>
+                              <div class="bar3"></div>
+                            </div>
+                    </a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main>
-        <div class="hero-main">
-            <div class="hero-image-container2">
+    <main id="main" class="main2">
+        <div data-aos-duration="2000" class="hero-main">
+            <div class="hero-image-home">
             </div>
             <div class="hero-text-container">
                 <h1 class="hero-text-h1">Mary Beth Mullens</h1>
@@ -57,68 +65,103 @@
         </div>
         <div class="container">
             <div>
-                <div id="mywork">
-                    <h2>My Work</h2>
+                <div data-aos="zoom-in" id="mywork">
+                    <h2>Featured Work:</h2>
                     <p><i>Selected highlights from my portfolio:</i></p>
                 </div>
                 <div>
-                    <div class="workrow">
-                        <div class="column col-md-6 col-lg-7">
+                    <div data-aos="fade-right" data-aos-easing="ease-in-out" class="workrow">
+                        <div data-aos="flip-left" class="column col-md-6 col-lg-7">
                             <picture>
                                 <img src="img/campfam/campfam-cover.jpg"
                                     alt="Photo of an tent in the woods and CAMPFAM logo">
                             </picture>
                         </div>
                         <div class="column col-md-6 col-lg-5">
-                            <h3>Case Study: CampFam Website</h3>
-                            <p>User Experience and User Interface Design of a responsive web app for booking
+                            <h3>Case Study: CampFam</h3>
+                            <p>User Experience and User Interface Design of a responsive website for booking
                                 family-friendly campgrounds.</p>
                             <div class="row primarybutton">
                                 <a href="project-campfam.html">view project</a>
                             </div>
                         </div>
                     </div>
-                    <div class="workrow">
-                        <div class="column col-md-6 col-lg-7">
+                    <div data-aos="fade-right" data-aos-easing="ease-in-out" class="workrow">
+                        <div data-aos="flip-left" class="column col-md-6 col-lg-7">
                             <picture>
                                 <img src="img/chirp/chirp-cover.jpg"
                                     alt="Illustration of a record, bird icon and CHIRP logo">
                             </picture>
                         </div>
                         <div class="column col-md-6 col-lg-5">
-                            <h3>Case Study: CHIRP Radio App</h3>
-                            <p>User Interface Design of CHIRP Radio music player app, comparing Apple and Android native
-                                operating system requirements.
+                            <h3>Case Study: CHIRP Radio</h3>
+                            <p>User Interface Design of CHIRP Radio native mobile app, comparing Apple and Android
+                                platform requirements.
                             </p>
                             <div class="row primarybutton">
                                 <a href="project-chirp.html">view project</a>
                             </div>
                         </div>
                     </div>
-                    <div class="workrow">
-                        <div class="column col-md-6 col-lg-7">
+                    <div data-aos="fade-right" data-aos-easing="ease-in-out" class="workrow">
+                        <div data-aos="flip-left" class="column col-md-6 col-lg-7">
                             <picture>
-                                <source srcset="img/marigold/marigold_thumbnail_1x.png" media="(max-width:767px)">
-                                <img src="img/marigold/marigold_thumbnail_2x.png"
+                                <img src="img/marigold/marigold-cover.jpg"
                                     alt="Black and white photo of a woman displaying a bracelet">
                             </picture>
                         </div>
                         <div class="column col-md-6 col-lg-5">
-                            <h3>Case Study: Marigold Clothing Branding</h3>
-                            <p>Brand Guideline Design for Marigold Clothing, a successful Indianapolis boutique open
-                                since
-                                1989.
+                            <h3>Case Study: Marigold Clothing</h3>
+                            <p>Brand Guideline Design and Marketing for Marigold Clothing, a successful Indianapolis boutique.
                             </p>
                             <div class="row primarybutton">
                                 <a href="project-marigold.html">view project</a>
                             </div>
                         </div>
                     </div>
+                    <div data-aos="fade-right" data-aos-easing="ease-in-out" class="workrow">
+                        <div data-aos="flip-left" class="column col-md-6 col-lg-7">
+                            <picture>
+                                <img src="img/lovebroadripple/lovebr-cover.jpg"
+                                    alt="Black and white photo of a woman displaying a bracelet">
+                            </picture>
+                        </div>
+                        <div class="column col-md-6 col-lg-5">
+                            <h3>Case Study: Love Broad Ripple</h3>
+                            <p>Brand Guideline Design for a non-profit neighborhood merchant association.
+                            </p>
+                            <div class="row primarybutton">
+                                <a href="project-lovebroadripple.html">view project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-easing="ease-in-out" class="workrow">
+                        <div data-aos="flip-left" class="column col-md-6 col-lg-7">
+                            <picture>
+                                <source srcset="img/ideas/ideasonthego_thumbnail_1x.png" media="(max-width:767px)">
+                                <img src="img/ideas/ideasonthego-cover.jpg"
+                                    alt="Image of many wireframes for a note taking app design">
+                            </picture>
+                        </div>
+                        <div class="column col-md-6 col-lg-5">
+                            <h3>Case Study: Ideas on the Go</h3>
+                            <p>User Interface design for a note-taking app pitch presentation.
+                            </p>
+                            <div class="row primarybutton">
+                                <a href="project-notes.html">view project</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
+            <div data-aos="zoom-in" class="row secondarybutton center">
+                <a href="work.html">view more of my portfolio</a>
+            </div>
+            <br>
+            <br>
+            <div data-aos="fade-zoom-in" data-aos-easing="ease-in-out" class="row">
                 <div class="animation-row">
-                    <svg version="1.1" id="animation" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                    <svg version="1.1" id="animation" 
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 500 182.81" style="enable-background:new 0 0 500 182.81;" xml:space="preserve">
                         <style type="text/css">
@@ -518,7 +561,7 @@
                             }
                         </style>
                         <switch>
-                            <g i:extraneous="self">
+                            <g>
                                 <path id="sun-rays" class="st1" d="M469.04,86.61c0.14,0.56-0.2,1.13-0.77,1.27c-2.43,0.6-4.95,0.91-7.48,0.91
 			c-2.49,0-4.97-0.3-7.37-0.89c-0.56-0.14-0.91-0.71-0.77-1.27c0.14-0.56,0.71-0.91,1.27-0.77c4.5,1.1,9.34,1.1,13.84-0.02
 			C468.33,85.7,468.9,86.05,469.04,86.61z M450.49,28.8c-4.7,1.67-8.99,4.5-12.39,8.19c-0.39,0.43-0.37,1.09,0.06,1.48
@@ -2324,14 +2367,18 @@
                         </switch>
                     </svg>
                 </div>
+                <div class="center"><p style="font-size: .8em; "><i>image created with CSS Animations</i></p></div>
             </div>
         </div>
         <br>
     </main>
-    <footer id="contact">
+    <footer id="contactfooter">
         <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Call <a href="tel:317-694-7367" style="color: #346d74">317-694-7367</a> or email mbmullens@gmail.com</p>
+            <h2>Contact:</h2>
+            <p>Mary Beth Mullens | Indianapolis, IN
+                <br>Graphic Designer &amp; UX/UI Designer
+                <br><a href="tel:317-694-7367" style="color: #346d74"><i style="font-size: 18px" class="fa-solid fa-phone-volume"></i>(317) 694-7367</a>&nbsp; &nbsp;mbmullens@gmail.com <i class="fa-regular fa-envelope"></i>
+            </p>
             <div class="row secondarybutton">
                 <a href="mailto:mbmullens@gmail.com">send email</a>
             </div>
@@ -2343,13 +2390,25 @@
                     <img src="img/icon-behance.svg" class="icons" alt="Behance icon">
                 </a>
             </div>
-            <div id="copyright">
-                <p> &copy; 2024 | Mary Beth Mullens | Indianapolis, IN</p>
-            </div>
+            <p class="quicklinks" style="font-size: 14px">Sitemap:
+                <a href="#home">Home</a> | 
+                <a href="work.html">Portfolio</a> | 
+                <a href="about.html">About</a> | 
+                <a href="contact.html">Contact</a>
+                <br>&copy; 2024 website designed from scratch using HTML, CSS and Javascript.
+            </p>
+            <br>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
     <script src="js/scripts.js"></script>
 </body>
 

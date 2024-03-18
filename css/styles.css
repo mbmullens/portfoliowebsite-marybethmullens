@@ -44,14 +44,14 @@ h2 {
 h3 {
   font-size: 1.25em;
   font-weight: 700;
-  margin: 4px;
+  margin: 4px 0.1px;
   line-height: 1.3;
 }
 
 h4 {
   font-size: 1.1em;
   font-weight: 700;
-  margin: 4px;
+  margin: 4px 0.1px;
   line-height: 1.3;
 }
 
@@ -99,7 +99,7 @@ a:focus {
 header {
   background-color: #4ca0a4;
   width: 100%;
-  position: fixed;
+  position: relative;
   padding-top: 10px;
 }
 
@@ -144,6 +144,7 @@ nav > ul {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.2s linear;
 }
 
 .navtoggle.responsive li:last-child {
@@ -174,10 +175,6 @@ nav > ul {
   text-decoration: none;
 }
 
-main {
-  padding-top: 82px;
-}
-
 footer {
   background-color: #e6e6e6;
   text-align: center;
@@ -189,8 +186,8 @@ footer {
   background-color: #2f7e83;
   color: #fff;
   font-weight: 600;
-  padding: 8px 20px;
-  margin: 4px;
+  padding: 10px 20px;
+  margin: 4px 0.1px;
   border-radius: 50px;
   transition: 0.3s;
   text-decoration: none;
@@ -202,7 +199,7 @@ footer {
   background-color: #4ca0a4;
   color: #111;
   font-weight: 700;
-  padding: 12px 24px;
+  padding: 14px 24px;
   text-decoration: none;
 }
 
@@ -255,6 +252,21 @@ footer {
   color: #2f7e83;
 }
 
+.fa-solid a {
+  padding: 8px;
+  font-size: 2em;
+  color: #2f7e83;
+  text-decoration: none;
+}
+
+.fa-solid a:hover,
+.fa-solid a:focus {
+  padding: 8px;
+  font-size: 2em;
+  color: #2f7e83;
+  text-decoration: underline;
+}
+
 .fa-brands {
   font-size: 24px;
   width: 32px;
@@ -264,8 +276,8 @@ footer {
   padding: 4px;
   font-size: 12px;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 24px;
+  right: 24px;
   border: 3px solid #2f7e83;
   border-radius: 100px;
   background-color: white;
@@ -278,8 +290,8 @@ footer {
   padding: 8px;
   font-size: 12px;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 24px;
+  right: 24px;
   border: 3px solid #2f7e83;
   border-radius: 150px;
   background-color: #e6e6e6;
@@ -340,6 +352,35 @@ footer {
   display: table;
 }
 
+.columncasestudy {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.columnrow {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.columnrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.columnlines p {
+  margin: 8px 4px 4px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.columnlines a {
+  font-size: 14px;
+}
+
 #hero {
   text-align: center;
   padding: 10px 0.1px 15px;
@@ -365,15 +406,15 @@ footer {
   line-height: 0;
 }
 
+#contactfooter h2 {
+  line-height: 1;
+}
+
 .center {
   text-align: center;
 }
 
-#work {
-  padding-bottom: 20px;
-}
-
-#about {
+#aboutpage {
   padding-bottom: 20px;
 }
 
@@ -382,7 +423,7 @@ footer {
 }
 
 #about-intro h3 {
-  font-size: 1.3em;
+  font-size: 1.25em;
   font-weight: 500;
   color: #2f7e83;
   line-height: 1.4;
@@ -394,11 +435,18 @@ footer {
 }
 
 #about-mystory h3 {
-  font-size: 1.3em;
-  font-weight: 500;
+  font-size: 1.25em;
+  font-weight: 700;
   color: #2f7e83;
   line-height: 1.4;
   padding-bottom: 10px;
+}
+
+#contactpage h3 {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #2f7e83;
+  line-height: 1.3;
 }
 
 #project {
@@ -417,22 +465,122 @@ footer {
   }
 }
 
-.hero-image-container2 {
+.hero-image-home {
   grid-area: overflow;
   width: 100%;
   height: 300px;
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.75)), url("/img/hero-image-home.jpg");
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/img/hero-image-home.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-notes {
+  grid-area: overflow;
+  width: 100%;
+  height: 200px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url("/img/hero-image-home.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-about {
+  grid-area: overflow;
+  width: auto;
+  height: 200px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("/img/about-marybeth-photo-2x.jpg");
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-campfam {
+  grid-area: overflow;
+  width: 100%;
+  height: 200px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("/img/campfam/campfam-002.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.hero-image-container {
+.hero-image-retroresale {
   grid-area: overflow;
-  width: auto;
+  width: 100%;
   height: 200px;
-  background-image: radial-gradient(circle, rgba(61, 61, 61, 0.35), rgba(0, 0, 0, 0.65)), url("/img/about-marybeth-photo-2x.jpg");
-  background-position: 50% 20%;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.7)), url("/img/retroresale/retroresale-002.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-mypiggybank {
+  grid-area: overflow;
+  width: 110%;
+  height: 200px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)), url("/img/mypiggybank/mypiggybank-001.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-viaeurasia {
+  grid-area: overflow;
+  width: 100%;
+  height: 200px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("/img/viaeurasia/viaeurasia-005.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-lovebr {
+  grid-area: overflow;
+  width: 100%;
+  height: 200px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("/img/lovebroadripple/lovebr-011.jpg");
+  background-position: 50% 68%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-chirp {
+  grid-area: overflow;
+  width: 100%;
+  height: 200px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("/img/chirp/chirp-image004.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-marigold {
+  grid-area: overflow;
+  width: 110%;
+  height: 200px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("/img/marigold/Marigold-BrandGuide_Page_07.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-contact {
+  grid-area: overflow;
+  width: 100%;
+  height: 200px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("/img/me-computer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image-work {
+  grid-area: overflow;
+  width: 110%;
+  height: 200px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("/img/portfolio/BeeActive_2021_GeneralAnnouncement.svg");
+  background-position: 50% 55%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -472,6 +620,34 @@ footer {
   border-radius: 300px;
 }
 
+.hamburgercontainer {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -492,7 +668,7 @@ Medium devices (640px and larger)
     font-style: normal;
     color: #111;
     text-align: center;
-    line-height: 1.1;
+    line-height: 1.2;
   }
 
   h2 {
@@ -506,15 +682,15 @@ Medium devices (640px and larger)
   }
 
   h3 {
-    font-size: 1.4em;
+    font-size: 1.35em;
     font-weight: 700;
-    margin: 4px;
+    margin: 4px 0.1px;
     line-height: 1.3;
   }
 
   h4 {
     font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.3;
   }
 
@@ -534,7 +710,7 @@ Medium devices (640px and larger)
   }
 
   .main2 {
-    padding-top: 1px;
+    padding-top: 0.01px;
   }
 
   #header-logo {
@@ -593,7 +769,7 @@ Medium devices (640px and larger)
   .navbutton a:active {
     opacity: 0.8;
     background-color: #e6e6e6;
-    padding: 4px 16px;
+    padding: 6px 16px;
     text-decoration: none;
   }
 
@@ -620,7 +796,11 @@ Medium devices (640px and larger)
   }
 
   #mywork h2 {
-    line-height: 0;
+    line-height: 0.25;
+  }
+
+  #contactfooter h2 {
+    line-height: 1;
   }
 
   main {
@@ -636,7 +816,32 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .col-md-left {
+    width: 33.33%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .col-md-right {
+    width: 66.66%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .columncasestudy {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+
+  .columncasestudy-l-50 {
+    float: left;
+    width: 50%;
+    padding: 15px;
   }
 
   .container {
@@ -655,7 +860,7 @@ Medium devices (640px and larger)
   }
 
   #about-intro h3 {
-    font-size: 1.4em;
+    font-size: 1.25em;
     font-weight: 500;
     color: #2f7e83;
     line-height: 1.4;
@@ -667,30 +872,138 @@ Medium devices (640px and larger)
   }
 
   #about-mystory h3 {
-    font-size: 1.4em;
-    font-weight: 500;
+    font-size: 1.25em;
+    font-weight: 700;
     color: #2f7e83;
     line-height: 1.4;
     padding-bottom: 10px;
     margin: 0.1px;
   }
 
-  .hero-image-container2 {
+  #contactpage h3 {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #2f7e83;
+    line-height: 1.4;
+    padding-bottom: 10px;
+  }
+
+  .hero-image-home {
     grid-area: overflow;
     width: auto;
     height: 300px;
-    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("/img/hero-image-home.jpg");
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("/img/hero-image-home.jpg");
+    background-position: 50% 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-notes {
+    grid-area: overflow;
+    width: auto;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("/img/hero-image-home.jpg");
+    background-position: 50% 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-about {
+    grid-area: overflow;
+    width: auto;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.75)), url("/img/about-marybeth-photo-2x.jpg");
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-campfam {
+    grid-area: overflow;
+    width: auto;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.8)), url("/img/campfam/campfam-002.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  .hero-image-container {
+  .hero-image-retroresale {
+    grid-area: overflow;
+    width: 100%;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.8)), url("/img/retroresale/retroresale-002.jpg");
+    background-position: 50% 42%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-mypiggybank {
+    grid-area: overflow;
+    width: 100%;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("/img/mypiggybank/mypiggybank-001.jpg");
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-viaeurasia {
+    grid-area: overflow;
+    width: 100%;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/img/viaeurasia/viaeurasia-005.jpg");
+    background-position: 50% 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-lovebr {
+    grid-area: overflow;
+    width: 100%;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/img/lovebroadripple/lovebr-011.jpg");
+    background-position: 50% 58%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-chirp {
     grid-area: overflow;
     width: auto;
     height: 300px;
-    background-image: radial-gradient(circle, rgba(61, 61, 61, 0.35), rgba(0, 0, 0, 0.75)), url("/img/about-marybeth-photo-2x.jpg");
-    background-position: 50% 20%;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.8)), url("/img/chirp/chirp-image004.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-marigold {
+    grid-area: overflow;
+    width: auto;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.8)), url("/img/marigold/Marigold-BrandGuide_Page_07.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-contact {
+    grid-area: overflow;
+    width: auto;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("/img/me-computer.jpg");
+    background-position: 50% 34%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-image-work {
+    grid-area: overflow;
+    width: 100%;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.85)), url("/img/portfolio/BeeActive_2021_GeneralAnnouncement.png");
+    background-position: 50% 52%;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -700,7 +1013,7 @@ Medium devices (640px and larger)
     background-color: #4ca0a4;
     color: #111;
     font-weight: 700;
-    padding: 12px 24px;
+    padding: 14px 24px;
     text-decoration: none;
   }
 
@@ -709,8 +1022,8 @@ Medium devices (640px and larger)
     padding: 8px;
     font-size: 12px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 24px;
+    right: 24px;
     border: 3px solid #2f7e83;
     border-radius: 150px;
     background-color: #e6e6e6;
@@ -753,15 +1066,15 @@ Large devices (1024px or larger)
   }
 
   h3 {
-    font-size: 1.6em;
+    font-size: 1.35em;
     font-weight: 700;
-    margin: 4px;
+    margin: 4px 0.1px;
     line-height: 1.3;
   }
 
   h4 {
-    font-size: 1.4em;
-    font-weight: 400;
+    font-size: 1.2em;
+    font-weight: 700;
     line-height: 1.3;
   }
 
@@ -785,7 +1098,7 @@ Large devices (1024px or larger)
   }
 
   .container {
-    max-width: 1100px;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -841,7 +1154,7 @@ Large devices (1024px or larger)
     font-weight: 600;
     font-size: 18px;
     margin: 6px;
-    padding: 3px 14px;
+    padding: 4px 14px;
     position: relative;
     z-index: 0;
     cursor: pointer;
@@ -852,7 +1165,7 @@ Large devices (1024px or larger)
   .navbutton a:active {
     opacity: 0.8;
     background-color: #e6e6e6;
-    padding: 5px 20px;
+    padding: 6px 20px;
     text-decoration: none;
   }
 
@@ -884,7 +1197,11 @@ Large devices (1024px or larger)
   }
 
   #mywork h2 {
-    line-height: 0;
+    line-height: 0.25;
+  }
+
+  #contactfooter h2 {
+    line-height: 1;
   }
 
   main {
@@ -998,6 +1315,16 @@ Large devices (1024px or larger)
   }
 }
 
+@keyframes arrow-down-move {
+  from {
+    transform: translate(1px, -10px);
+  }
+
+  to {
+    transform: translate(1px, 10px);
+  }
+}
+
 .sun {
   animation: 3s color-change infinite alternate linear;
 }
@@ -1024,6 +1351,10 @@ Large devices (1024px or larger)
 
 .banner-thanks {
   animation: 12s banner-thanks-move infinite linear;
+}
+
+.arrow-down {
+  animation: 0.5s arrow-down-move infinite alternate linear;
 }
 
 html {

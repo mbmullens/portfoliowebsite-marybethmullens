@@ -4,10 +4,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Project Page CampFam Website">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <meta name="description" content="Project Page CHIRP Website">
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" -->
+        <!-- integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <!-- <script src="js/scripts.js"></script> -->
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -21,11 +21,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- <link rel="stylesheet" href="http://localhost:3002/dist/aos.css" /> -->
     <script src="https://kit.fontawesome.com/815ce57188.js" crossorigin="anonymous"></script>
     <title>Case Study CHIRP Radio</title>
 </head>
 
-<body class="chirp">
+<body id="chirp">
     <header id="header" class="css-box-shadow header2">
         <div class="container">
             <div class="navtoggle" id="myNavtoggle">
@@ -34,11 +36,17 @@
                 </a>
                 <nav>
                     <ul class="navbutton">
-                        <li><a href="index.html">work</a></li>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="work.html">portfolio</a></li>
                         <li><a href="about.html">about</a></li>
-                        <li><a href="#contact" onclick="menuToggle()">contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                    class="fas fa-bars"></i><i class="fas fa-xmark"></i></a></li>
+                        <li><a href="contact.html" onclick="menuToggle()">contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                            <div class="hamburgercontainer" onclick="myFunction(this)">
+                              <div class="bar1"></div>
+                              <div class="bar2"></div>
+                              <div class="bar3"></div>
+                            </div>
+                    </a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,22 +54,28 @@
     </header>
     <main id="main" class="main2">
         <div>
+            <div class="hero-main">
+                <div class="hero-image-chirp">
+                </div>
+                <div class="hero-text-container">
+                    <h1 class="hero-text-h1">Case Study: CHIRP</h1>
+                </div>
+            </div>
             <div id="project" class="container">
                 <br>
                 <div class="center">
                     <div>
-                        <h1>Case Study: CHIRP</h1>
-                        <h3 style="color: #358e94">community radio player app</h3>
-                        <p>UI Design of CHIRP Radio music player app, comparing Apple and Android native operating
+                        <h3 data-aos="fade-right" style="color: #358e94">community radio player app</h3>
+                        <p data-aos="fade-left">UI Design for <a href="https://chirpradio.org/" target="_blank"> CHIRP Radio's</a> music player app, comparing Apple and Android native operating
                             system requirements.</p>
                     </div>
-                    <div class="row primarybutton center">
+                    <div data-aos="zoom-in" class="row primarybutton center">
                         <a href="https://www.figma.com/proto/BNXU434DReOWzOvzQpf1Fj?node-id=51%3A613" target="_blank">
-                            <i class="fa-brands fa-android"></i> Android prototype</a>
+                            <i class="fa-brands fa-android"></i> CHIRP Android prototype</a>
                     </div>
-                    <div class="row primarybutton center">
+                    <div data-aos="zoom-in" class="row primarybutton center">
                         <a href="https://www.figma.com/proto/BNXU434DReOWzOvzQpf1Fj?node-id=24%3A20701" target="_blank">
-                            <i class="fa-brands fa-apple"></i> Apple prototype</a>
+                            <i class="fa-brands fa-apple"></i> CHIRP Apple prototype</a>
                     </div>
                     <div class="quicklinksrow">
                         <p class="quicklinks" style="font-size: 14px"><b>Quicklinks:</b>
@@ -87,9 +101,9 @@
                     <div id="aboutchirp" class="casestudy center">
                         <img src="img/chirp/icon-noteabout.svg" style="max-width: 80px" alt="CHIRP music note icon">
                         <h3>about CHIRP:</h3>
-                        <p>CHIRP (Chicago Independent Radio Project) is a volunteer-driven, listener supported community
-                            radio station formed in 2007 in Chicago, IL. They can be heard everyday on 107.1FM in the
-                            city or online at <a href="https://chirpradio.org/">CHIRPRadio.org</a></p>
+                        <p><a href="https://chirpradio.org/" target="_blank"> CHIRP (Chicago Independent Radio Project)</a> is a volunteer-driven, listener supported community
+                            radio station formed in 2007 in Chicago, IL. They can be heard everyday on 107.1 FM in the
+                            city or worldwide online.</p>
                     </div>
                     <div class="casestudy center">
                         <picture>
@@ -100,12 +114,10 @@
                         <img src="img/chirp/icon-appleandroid.svg" style="max-width: 80px"
                             alt="CHIRP Android Apple icon">
                         <h3>refreshing their app:</h3>
-                        <p>Originally created in 2013, the CHIRP Radio app is due for a refresh, with an update to the
-                            most recent guidelines set out by Android &amp; Apple's operating systems.</p>
-                        <h3 style="color: #AC0011">did you know?</h3>
-                        <p><b>When designing a native app, it’s best to stick as closely as possible to each platform's
-                                design guide.</b> Following specified UI guidelines helps ensure that users of either
-                            mobile platform can intuitively start using the app right away.</p>
+                        <p>Originally created over ten years ago in 2013, the CHIRP app is due for a refresh, with an update to the
+                            more recent standards set out by Android and Apple's operating systems.</p>
+                        <p style="color: #AC0011"><i><b>Did you know?</b> When designing a native mobile app, it’s best to stick as closely as possible to each system's specified UI guidelines, which helps to ensure users of either
+                            mobile platform can intuitively start using the app upon open.</i></p>
                     </div>
                     <div class="casestudy center">
                         <picture>
@@ -118,12 +130,12 @@
                         <h3>project brief:</h3>
                         <p><b>Design two versions of a CHIRP native mobile app for Android (Material 3) &amp; Apple (iOS
                                 17):</b>
-                            <br>Native mobile design patterns using each platform’s guidelines
-                            <br>Clearly defined typography &amp; color
-                            <br>Consistent, intuitive UI design
-                            <br>User gestures demonstrated
-                            <br>Appropriate use of UI feedback
-                            <br>Designed for accessibility
+                            <br>1. Native mobile design patterns using each platform’s guidelines
+                            <br>2. Clearly defined typography &amp; color
+                            <br>3. Consistent, intuitive UI design
+                            <br>4. User gestures demonstrated
+                            <br>5. Appropriate use of UI feedback
+                            <br>6. Designed for accessibility
                         </p>
                     </div>
                     <div class="casestudy center">
@@ -136,7 +148,7 @@
                         <h3>key functions &amp; user flow:</h3>
                         <p><b>The most important function of the app is to play the latest song streaming live on CHIRP
                                 Radio. Based on research of other community radio apps. a few other key functions were
-                                also defined but kept to a minimum:</b>
+                                defined but kept to a minimum:</b>
                             <br>1. Sign In or Create Account
                             <br>2. Listen to What’s Playing Now
                             <br>3. Request a Song
@@ -164,10 +176,9 @@
                             <img src="img/chirp/icon-accessibility.svg" style="max-width: 80px"
                                 alt="CHIRP accessibility icon">
                             <h3>color contrast accessibility:</h3>
-                            <p>Color contrast refers to the difference in light between font (or anything in the
-                                foreground) and its background. Web Content Accessibility Guidelines (WCAG) require a
-                                certain ratio of color contrast for people with vision disabilities.
-                                The goal is to meet at least WCAG Level AA conformance.</p>
+                            <p><a href="https://webaim.org/resources/contrastchecker/" target="_blank">WCAG (Web Content Accessibility Guidelines)</a> requires a
+                                minimum ratio of color contrast between fonts or icons and their background to accomodate people with visual disabilities.
+                                All colors in this app meet WCAG Level AA standards.</p>
                         </div>
                         <div class="casestudy center">
                             <picture>
@@ -176,9 +187,7 @@
                         </div>
                         <div id="colors" class="casestudy center">
                             <h3>colors:</h3>
-                            <p>Same colors are used on both designs, starting with Apple colors then creating tints
-                                &amp; shades. (Apple’s operating system has specific recommended colors while Android
-                                does not.)</p>
+                            <p>The same hues were used for both designs, starting with Apple's iOS recommended color palette then branching off into shades and tints of each color.</p>
                         </div>
                         <div class="casestudy center">
                             <picture>
@@ -188,8 +197,8 @@
                         <div id="logo" class="casestudy center">
                             <img src="img/chirp/icon-logoicon.svg" style="max-width: 80px" alt="CHIRP bird logo icon">
                             <h3>logo refresh:</h3>
-                            <p>CHIRP bird logo was cleaned up and simplified for an app icon using Adobe Illustrator,
-                                and their old album placeholder image was updated in Figma.</p>
+                            <p>The CHIRP bird logo was cleaned up and simplified for an app icon using Adobe Illustrator. 
+                                <br>Their old album placeholder image was updated in Figma.</p>
                         </div>
                         <div class="casestudy center">
                             <picture>
@@ -198,8 +207,8 @@
                         </div>
                         <div id="icons" class="casestudy center">
                             <h3>icon design:</h3>
-                            <p>Volume levels were designed as a silhouette of the Chicago skyline. Icons and interfaces
-                                were designed in accordance with each platform’s guidelines.</p>
+                            <p>Volume levels were designed as a silhouette of the Chicago skyline. 
+                                <br>Icons and interfaces were designed in accordance with each platform’s guidelines.</p>
                         </div>
                         <div class="casestudy center">
                             <picture>
@@ -209,7 +218,7 @@
                         <div id="wireframes" class="casestudy center">
                             <img src="img/chirp/icon-giftdesign.svg" style="max-width: 80px" alt="CHIRP gift icon">
                             <h3>mid-fidelity wireframes:</h3>
-                            <p>Grayscale prototype developed in Figma.</p>
+                            <p>Grayscale prototypes developed in Figma.</p>
                         </div>
                         <div class="casestudy center">
                             <picture>
@@ -218,13 +227,12 @@
                         </div>
                         <div class="center">
                             <h3>high-fidelity wireframes:</h3>
-                            <p>A realistic prototype that closely resembles the final design each platform’s app was
-                                created in Figma.</p>
+                            <p>Realistic prototypes were created in Figma, including interactive elements that would closely resembling the final app design for each platform.</p>
                         </div>
                         <div class="casestudy primarybutton center">
-                            <p><b>Test out the interactive Android prototype below!</b></p>
+                            <p><b>Click the button to test out the Android prototype:</b></p>
                             <a href="https://www.figma.com/proto/BNXU434DReOWzOvzQpf1Fj?node-id=51%3A613"
-                                target="_blank"> <i class="fa-brands fa-android"></i> Android prototype</a>
+                                target="_blank"> <i class="fa-brands fa-android"></i> CHIRP Android prototype</a>
                         </div>
                         <br>
                         <div class="casestudy center">
@@ -233,9 +241,9 @@
                             </picture>
                         </div>
                         <div class="casestudy primarybutton center">
-                            <p><b>Test out the interactive Apple prototype below!</b></p>
+                            <p><b>Click the button to test out the Apple prototype:</b></p>
                             <a href="https://www.figma.com/proto/BNXU434DReOWzOvzQpf1Fj?node-id=24%3A20701"
-                                target="_blank"> <i class="fa-brands fa-apple"></i> Apple prototype</a>
+                                target="_blank"> <i class="fa-brands fa-apple"></i> CHIRP Apple prototype</a>
                         </div>
                         <br>
                         <div class="casestudy center">
@@ -247,7 +255,7 @@
                             <img src="img/chirp/icon-radiofeedback.svg" style="max-width: 80px"
                                 alt="CHIRP radio sound icon">
                             <h3>user interface feedback:</h3>
-                            <p>Visual and sound feedback are provided with animations &amp; interactive elements.</p>
+                            <p>Visual and sound feedback were provided with animations &amp; interactive elements.</p>
                         </div>
                         <div class="casestudy center">
                             <picture>
@@ -263,7 +271,7 @@
                             <img src="img/chirp/icon-userheartgesture.svg" style="max-width: 80px"
                                 alt="CHIRP heart icon">
                             <h3>user gestures:</h3>
-                            <p>The app gestures used are consistent with current mobile design patterns.</p>
+                            <p>The app gestures used were consistent with current mobile design patterns.</p>
                         </div>
                         <div class="casestudy center">
                             <picture>
@@ -281,22 +289,28 @@
                                     alt="hand holding mobile phone showing CHIRP app">
                             </picture>
                         </div>
-                        <div class="casestudy center">
-                            <h3>thank you for viewing this case study!</h3>
-                        </div>
-                        <div class="row secondarybutton center">
-                            <a href="#main">return to the top</a>
-                        </div>
-                        <div class="topofpage"><a href="#main"><i class="fa-solid fa-arrows-up-to-line"></i></a> </div>
                     </div>
+                    <div class="row secondarybutton center">
+                        <a href="#main">return to the top</a>
+                    </div>
+                    <div class="row primarybutton center">
+                        <a href="work.html">view more work</a>
+                    </div>
+                    <div class="topofpage"><a href="#header">
+                        <i class="fa-solid fa-arrows-up-to-line"></i></a>
+                    </div>
+                    <br>
                 </div>
             </div>
         </div>
     </main>
-    <footer id="contact">
+    <footer id="contactfooter">
         <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Call <a href="tel:317-694-7367" style="color: #346d74">317-694-7367</a> or email mbmullens@gmail.com</p>
+            <h2>Contact:</h2>
+            <p>Mary Beth Mullens | Indianapolis, IN
+                <br>Graphic Designer &amp; UX/UI Designer
+                <br><a href="tel:317-694-7367" style="color: #346d74"><i style="font-size: 18px" class="fa-solid fa-phone-volume"></i>(317) 694-7367</a>&nbsp; &nbsp;mbmullens@gmail.com <i class="fa-regular fa-envelope"></i>
+            </p>
             <div class="row secondarybutton">
                 <a href="mailto:mbmullens@gmail.com">send email</a>
             </div>
@@ -308,13 +322,25 @@
                     <img src="img/icon-behance.svg" class="icons" alt="Behance icon">
                 </a>
             </div>
-            <div id="copyright">
-                <p> &copy; 2024 | Mary Beth Mullens | Indianapolis, IN</p>
-            </div>
+            <p class="quicklinks" style="font-size: 14px">Sitemap:
+                <a href="index.html">Home</a> | 
+                <a href="work.html">Portfolio</a> | 
+                <a href="about.html">About</a> | 
+                <a href="contact.html">Contact</a>
+                <br>&copy; 2024 | Designed from scratch using HTML, CSS and Javascript.
+            </p>
+            <br>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
     <script src="js/scripts.js"></script>
 </body>
 

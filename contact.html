@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Mary Beth Mullens">
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" -->
+        <!-- integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <!-- <script src="js/scripts.js"></script> -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- <link rel="stylesheet" href="http://localhost:3002/dist/aos.css" /> -->
+    <script src="https://kit.fontawesome.com/815ce57188.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+</head>
+
+<body id="contact">
+    <header id="header" class="css-box-shadow header2">
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html">
+                    <img src="img/header-logo.svg" id="header-logo" alt="Mullens Designer Logo">
+                </a>
+                <nav>
+                    <ul class="navbutton">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="work.html">portfolio</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html" onclick="menuToggle()">contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                            <div class="hamburgercontainer" onclick="myFunction(this)">
+                              <div class="bar1"></div>
+                              <div class="bar2"></div>
+                              <div class="bar3"></div>
+                            </div>
+                    </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main id="main" class="main2">
+        <div class="hero-main">
+            <div class="hero-image-contact">
+            </div>
+            <div class="hero-text-container">
+                <h1 class="hero-text-h1">Get in Touch!</h1>
+            </div>
+        </div>
+        <br>
+        <div id="contactpage" class="container center">
+            <h3 data-aos="zoom-in" data-aos-easing="ease-in-out">Open to full-time, contract or freelance design jobs.</h3>
+            <p data-aos="fade-right">My goal is to find a new Senior Graphic Design position or junior role in UX/UI Website Design, working in Indianapolis or remotely anywhere in the U.S. I’m eager to bring my blend of experience, artistic skill, and dilligent planning to any company or organization.</p>
+            <p>Let's connect on <a href="https://www.linkedin.com/in/mary-beth-mullens/" target="_blank">Linkedin</a> or <a href="https://www.behance.net/marybethmullens" target="_blank">Behance.</a></p>
+        </div>
+        <div class="center">
+            <h3 style="color: #358e94">Questions? Reach out below!</h3>
+            <div class="about-icons arrow-down"><i class="fa-solid fa-circle-down"></i></div>
+        </div>
+        <br>
+    </main>
+    <footer id="contactfooter">
+        <div class="container">
+            <h2>Contact:</h2>
+            <p>Mary Beth Mullens | Indianapolis, IN
+                <br>Graphic Designer &amp; UX/UI Designer
+                <br><a href="tel:317-694-7367" style="color: #346d74"><i style="font-size: 18px" class="fa-solid fa-phone-volume"></i>(317) 694-7367</a>&nbsp; &nbsp;mbmullens@gmail.com <i class="fa-regular fa-envelope"></i>
+            </p>
+            <div class="row secondarybutton">
+                <a href="mailto:mbmullens@gmail.com">send email</a>
+            </div>
+            <div class="row">
+                <a href="https://www.linkedin.com/in/mary-beth-mullens/" class="a-icons" target="_blank">
+                    <img src="img/icon-linkedin.svg" class="icons" alt="LinkedIn icon">
+                </a>
+                <a href="https://www.behance.net/marybethmullens" class="a-icons" target="_blank">
+                    <img src="img/icon-behance.svg" class="icons" alt="Behance icon">
+                </a>
+            </div>
+            <p class="quicklinks" style="font-size: 14px">Sitemap:
+                <a href="index.html">Home</a> | 
+                <a href="work.html">Portfolio</a> | 
+                <a href="about.html">About</a> | 
+                <a href="#contact">Contact</a>
+                <br>&copy; 2024 | Designed from scratch using HTML, CSS and Javascript.
+            </p>
+            <br>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
